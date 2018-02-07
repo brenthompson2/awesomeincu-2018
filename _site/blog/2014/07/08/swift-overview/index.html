@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    _                                           ___
+   / \__      _____  ___  ___  _ __ ___   ___  |_ _|_ __   ___
+  / _ \ \ /\ / / _ \/ __|/ _ \| '_ ` _ \ / _ \  | || '_ \ / __|
+ / ___ \ V  V /  __/\__ \ (_) | | | | | |  __/  | || | | | (__
+/_/   \_\_/\_/ \___||___/\___/|_| |_| |_|\___| |___|_| |_|\___|
+  Growing High-Tech Startups in Lexington, Kentucky. #horses
+-->
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:description" content="by Danny Thorne
+
+">
+<meta property="og:url" content="http://localhost:4000/blog/2014/07/08/swift-overview/">
+<meta name="author" content="Awesome Inc">
+<meta property="og:title" content="A Swift Overview of Swift">
+<title>A Swift Overview of Swift | Awesome Inc U</title>
+<link rel="icon" href="/img/favicon.ico">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- External CSS -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,700|Exo:300,800" rel="stylesheet" type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<link href="/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/css/jekyll-tutorial.css" rel="stylesheet" type="text/css">
+<!-- my ip tracking -->
+<script type="text/javascript" src="https://l2.io/ip.js?var=myip"></script>
+<!-- Google Analytics -->
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-40742716-1', 'auto');
+    ga('send', 'pageview', {
+        'dimension1':  myip
+    });
+</script>
+
+        <!-- 
+	facebook pixel conversion tracking 
+	created on: 5/7/2016
+	last updated: 1/6/2017
+-->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1732394227046919'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1732394227046919&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+        <script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"77464144f0307e5d43de560d9806d2fdd98dbf1a8dba0fb4a61a9630fe7d7d5c1e92507c13fa0fac71e5ac4fb3822ca1", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img alt="Awesome Inc U" src="/img/Logo_Horizontal_white.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+            </ul>
+            <ul class="nav nav-pills navbar-nav navbar-right">
+                <li><p class="navbar-btn"><a class="btn btn-default" href="/youth/" role="button">Youth Courses</a></p></li>
+                <li><p class="navbar-btn"><a class="btn btn-default" href="/adults/" role="button">Adult Courses</a></p></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+        <div class="A">
+        <div class="container">
+    <div class="row">
+
+        <div class="col-sm-8 col-sm-offset-2 blog-main">
+
+          <div class="blog-post">
+				<h1 class="blog-post-title">A Swift Overview of Swift</h1>
+                <p class="blog-post-meta">Jul 08, 2014</p>
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_linkedin"></a>
+				</div>
+				<script async src="https://static.addtoany.com/menu/page.js"></script>
+                
+                <p><p>by Danny Thorne</p>
+
+<p>On June 2, 2014 at <a href="https://developer.apple.com/videos/wwdc/2014/">WWDC</a>, Apple announced a new programming language called <a href="https://developer.apple.com/swift/">Swift</a>. Let’s take a look at why and briefly highlight some of its pros and cons.</p>
+
+<p>The standard language for Apple iOS and OS X development is <a href="http://en.wikipedia.org/wiki/Objective-C">Objective-C</a>. It is an extension of the original C language, a language that is notoriously difficult to learn and tricky to use. Apple proposes the Swift language as a replacement for Objective-C that is easier to learn and use. At least two other strategies drive its design: it should be interoperable with Objective-C, and it should be fast.</p>
+
+<p><img src="/img/blog/swift_overview_0.jpg" alt="Swift playground, image from Apple &copy;" /></p>
+
+<!--break-->
+
+<p>Swift brings language features that are familiar to and welcomed by many programmers today. It supports <a href="http://en.wikipedia.org/wiki/Tuple">tuples</a>, multi-valued expressions that make it easy to write functions that return multiple values and allow shortcuts like assignment statements involving multiple variables. Swift also makes it easy to define functions that accept a variable number of arguments. It supports operator overloading, including custom operators. It supports natural string manipulation like a scripting language. Functions in Swift can be passed to other functions and returned by other functions. Swift is strongly typed, but types can be inferred. Swift includes generics (generic functions and generic types), anonymous parameters ($0, $1, $2, …), default arguments, and elaborate pattern matching in switch statements.</p>
+
+<p>Swift is designed to make the programmer less error prone. It does array bounds checking, it requires variables always to be initialized, it is <a href="http://en.wikipedia.org/wiki/Type_safety">type safe</a>, it provides flexibility of syntax with semicolons and parens, and it requires the use of braces around the bodies of if-statements and loops (even if the body is a one-liner). It doesn’t include pointers, per se, at least on the surface. Assignment statements cannot be used as conditions in if-statements. In fact, all conditional expressions must be legitimate Boolean expressions. There is no fall-through by default in cases of switch statements. All of these features eliminate common pitfalls in programming.</p>
+
+<p>Considering the way Swift is designed to feel more like a scripting language than a typical systems language, one might expect to see a trade-off in performance. According to Apple, however, Swift programs run even faster than Objective-C programs. The two benchmark results presented during the announcement at WWDC show Swift running 40% faster in one case and 73% faster in another case relative to Objective-C.</p>
+
+<p>The most glaring drawback to Swift is the simple fact that it is a new language, and for current iOS and OS X developers there will be an overhead cost to learning the new language and incorporating it into their practice. For businesses, there will be the cost of converting existing Objective-C code to Swift. However, this is mitigated by the way that Apple has developed Swift to work “side-by-side” with Objective-C, so it is not necessary to choose one or the other exclusively. Additionally, Xcode automatically generates Swift versions of Objective-C API headers.</p>
+
+<p>There are a few things missing in Swift. There is no exception handling. There are currently no concurrency features built in to the Swift language. Swift does not include garbage collection, instead relying on ARC, the same automatic reference counting mechanism used for Objective-C in LLVM. There is currently no access control (e.g., public, private, protected) in user defined types. Some of these omissions will undoubtedly be addressed in future versions.</p>
+
+<p>It is too early to judge Swift, but, based on the first week of buzz in the community, optimism and excitement prevail for now!</p>
+</p>
+            </div>
+        </div><!-- /.blog-main -->
+
+     </div><!-- /.row -->
+</div>
+        </div>
+        <!-- check if page is meant to have press footer, if so, add this and take away margin top style in footer -->
+
+<footer ><!-- h/t to http://bootsnipp.com/snippets/featured/bootstrap-3-footer -->    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 hidden-xs">
+                <form action="//awesomeinc.us2.list-manage.com/subscribe/post?u=5114422b2183673d50186748d&amp;id=159107e690" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" class="form-control input-md">
+                    </div>
+                    <button class="btn btn-info btn-lg" type="submit"> Subscribe to Newsletter </button>
+                </form>
+                <hr class="visible-xs-block visible-sm-block">
+            </div>
+            <div class="col-md-8">
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://www.facebook.com/awesomeincorporated" target="_blank"><i class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://twitter.com/awesome_inc"  target="_blank"><i class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://plus.google.com/+AwesomeincOrgLex"  target="_blank"><i class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="mailto:info@awesomeincu.com"  target="_blank"><i class="fa fa-envelope-square fa-3x social-em"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/about/">About us</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li> <a href="/faq/">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/instructors/">Instructors</a></li>
+                        <li><a href="/alumni/">Alumni</a></li>
+                        <li><a href="/careers/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/calendar/">Calendar</a></li>
+                        <li><a href="/tutorials/">Tutorials</a></li>
+                        <li><a href="/notes/">Course Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/academy/">Academy</a></li>
+                        <li><a href="/bootcamp/">Bootcamp</a></li>
+                        <li><a href="/weekofcode/">Week of Code</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="https://www.awesomeinc.org"  target="_blank">Awesome Inc</a></li>
+                        <li><a href="https://fellowship.awesomeinc.org"  target="_blank">Awesome Fellowship</a></li>
+                        <li><a href="http://www.apaxsoftware.com"  target="_blank">APAX Software</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/press/">Press</a></li>
+                        <li><a href="/terms/">Terms of Service</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="https://www.awesomeinc.org"  target="_blank">© 2017 Awesome Inc U</a></li>
+                    <li><a href="#">Back to top</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</footer>
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="//getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/js/parallax.js"></script>
+<script src="/js/accordion.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+        
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+    require(["mojo/signup-forms/Loader"], function(L) {
+        L.start({
+            "baseUrl": "mc.us2.list-manage.com",
+            "uuid": "5114422b2183673d50186748d",
+            "lid": "159107e690"
+        })
+    })
+</script>
+        
+    </body>
+</html>

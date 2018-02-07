@@ -1,0 +1,396 @@
+---
+---
+/*****************************************************
+						Colors
+*****************************************************/
+$color_alto_approx: rgb(222, 222, 222);
+$color_cardinal_approx: rgb(184, 17, 36);
+$color_cardinal_approx_feature: rgb(150, 0, 23);
+$color_cardinal_approx_shade: rgb(220, 17, 36);
+$color_pumice_approx: rgb(200, 200, 200);
+$color_shady_lady_approx: rgb(165, 165, 165);
+$color_pippin_approx: rgb(255,222,223);
+$color_gray: #CECECE;
+$color_light_gray: rgb(236, 236, 236);
+$black: black;
+$color_silver_chalice_approx: #aaa;
+
+/*****************************************************
+						Variables
+*****************************************************/
+
+$background_image: url("/img/awesome-inc-learn-to-code-homepage-bg-grayscale.jpg");
+
+/*****************************************************
+						Sizes
+*****************************************************/
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: $tablet-width - 1;
+
+@mixin tablet {  /* 768-1023 */
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin mobile {  /* < 768 */
+	@media (max-width: #{$mobile-width}) {
+		@content;
+	}
+}
+
+@mixin desktop { /* > 1024 */
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+/*****************************************************
+					Hover States
+*****************************************************/
+@mixin setLinkSelectorStyle {
+	&:hover, &:active, &:focus {
+		@content;
+	}
+}
+
+/*****************************************************
+					Consistencies
+*****************************************************/
+
+.center {
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+
+.right-padding {
+	padding-right: 20px;
+}
+.left-padding {
+	padding-left: 20px;
+}
+
+/*******************************
+ * Red button
+ * Rounded edges
+ * White font
+ *******************************/
+.btn-action {
+	background-color: $color_cardinal_approx;
+	color: white;
+	border-color: $color_cardinal_approx;
+	border-radius: 6px;
+	font-size: 18px;
+	padding: 2px 14px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	@include setLinkSelectorStyle {
+		background-color: $color_cardinal_approx_shade;
+		border-color: $color_cardinal_approx_shade;
+	}
+	i {
+		margin-left: 2px;
+	}
+}
+
+
+
+/*****************************************************
+						Panels
+*****************************************************/
+.panels {
+	h2 {
+		margin-bottom: 35px;
+	}
+	.right-padding {
+		padding-left: 0;
+	}
+	.left-padding {
+		padding-right: 0;
+	}
+	@include mobile {
+		.right-padding {
+			padding-left: 15px;
+		}
+		.left-padding {
+			padding-right: 15px;
+		}
+	}
+	.panel-custom {
+		border: none;
+		background-color: $color_gray;
+		/*min-height: 350px;*/
+		position: relative;
+		@include mobile {
+			min-height: 300px;
+		}
+		.panel-heading {
+			background-color: $color_cardinal_approx;
+			color: white;
+			font-size: 22px;
+			font-weight: 600;
+			border: none;
+		}
+		img {
+			margin-top: 30px;
+			margin-bottom: 25px;
+		}
+		div.panel-body {
+			text-align: justify;
+		}
+		@include mobile {
+			div.panel-body {
+				height: 175px;
+			}
+		}
+		button {
+			/*margin-bottom: 20px;*/
+		}
+		.modal-footer {
+			p {
+				margin-bottom: 0;
+			}
+		}
+		@include mobile {
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+	.panel-footer {
+		background-color: $color_gray;
+		border-top: none;
+	}
+	.panel-footer > a.btn {
+		width: 30%;
+		@include mobile {
+			width:50%;
+		}
+	}
+	.panel-body {
+		display: flex;
+   		flex-grow:1;
+	}
+	@include mobile {
+		.panel > a.btn {
+			width: 50%;
+		}
+	}
+	.panel-feature {
+		background-color: $color_shady_lady_approx;
+		.panel-heading {
+			background-color: $color_cardinal_approx_feature;
+		}
+	}
+	.modal {
+		.modal-dialog {
+			width: 75%;
+		}
+		img {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		table {
+			td {
+				vertical-align: middle;
+			}
+		}
+
+	}
+
+}
+
+.Programming {
+	h2 {
+		font-weight: 600;
+	}
+}
+
+.row {
+	.col-md-5 {
+		@include desktop {
+			img {
+				margin-top: 75px;
+			}
+		}
+	}
+	.col-md-5 {
+		@include tablet {
+			img {
+				margin-top: 80px;
+				max-width: 400px;
+			}
+		}
+	}
+
+}
+
+/*****************************************************
+				Full Screen Header
+*****************************************************/
+
+.page-wrap {
+	z-index: 100;
+	header {
+		height: 100vh;
+		background-image: $background-image;
+		background-size: cover;
+		z-index: 2;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		position: relative;
+		&::after {
+			display: block;
+			position: fixed;
+		}
+		&::before {
+			content: "";
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: rgba(0, 0, 0, 0.4);
+			
+		}
+	}
+	
+	h1 {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: -10px;
+		z-index: 1;
+		font-size: 42px;
+		font-weight: 600;
+		color: white;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+		font-family: 'Lato', sans-serif;
+	}
+	h2 {
+		position: relative;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: -10px;
+		z-index: 1;
+		font-size: 52px;
+		font-weight: 800;
+		color: white;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+	}
+	hr {
+		border-top: 4px solid #ff3769;
+		width: 15%;
+		margin: 30px auto;
+	}
+	p {
+		text-align: center;
+		z-index: 3;
+		margin-bottom: 50px;
+		a.btn {
+			background-color: white;
+			color: #c7254e;
+			border: none;
+			margin: 0 25px;
+			font-weight: 600;
+		}
+	}
+}
+
+/*****************************************************
+				Creative Link Hovers
+*****************************************************/
+
+.cl-link-effect {
+	position: relative;
+	display: inline-block;
+	/*margin: 15px 25px;*/
+	/*outline: none;*/
+	/*color: #fff;*/
+	text-decoration: none;
+	/*text-transform: uppercase;*/
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1em;
+	overflow: hidden;
+	padding: 0;
+	/*height: 1em;*/
+	&.alumni {
+		margin: 0;
+	}
+}
+
+.cl-link-effect  {
+	position: relative;
+	z-index: 1;
+}
+
+.cl-link-effect {
+	overflow: hidden;
+	margin: 0 15px;
+}
+
+.cl-link-effect {
+	span {
+		display: block;
+		padding: 10px 20px;
+		background: white;
+		-webkit-transition: -webkit-transform 0.3s;
+		-moz-transition: -moz-transform 0.3s;
+		transition: transform 0.3s;
+	}
+	&.alumni {
+		span {
+			background: #ed3743;
+			color: white;
+		}
+	}
+}
+
+.cl-link-effect::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	padding: 10px 20px;
+	width: 100%;
+	height: 100%;
+	background: #c7254e;
+	color: white;
+	content: attr(data-hover);
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translateX(-25%);
+	&.alumni {
+		
+	}
+}
+.cl-link-effect.alumni::before {
+	background: white;
+	color: #ed3743;
+}
+
+.cl-link-effect:hover span,
+.cl-link-effect:focus span {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.cl-link-effect:hover::before,
+.cl-link-effect:focus::before {
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	transform: translateX(0%);
+}
+
+
+
+
+

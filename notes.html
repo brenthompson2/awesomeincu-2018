@@ -1,0 +1,40 @@
+---
+layout: page
+permalink: /notes/
+title: Class Notes
+redirect_from:
+  - /courses/
+  - /courses/basicweb-crash/
+  - /courses/ios-crash/
+  - /courses/jekyll-github-pages/
+  - /courses/make-a-unity-game-today/
+  - /courses/website-in-one-day/
+  - /courses/weekofcode/
+  - /courses/weekofcode2/
+  - /courses/weekofcodelou/
+---
+
+<div class="container">
+
+      <div class="blog-header">
+          <h1 class="blog-title">{{page.title}}</h1>
+        <p class="lead blog-description">{{page.description}}</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <ul>
+              {% for topic in site.notes %}
+              <li><a href={{topic.url}}>{{ topic.title }}</a></li>
+              {% endfor %}
+              </ul>
+            </div>
+            
+        </div><!-- /.blog-main -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->

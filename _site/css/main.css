@@ -1,0 +1,830 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  color: #3e3e3e;
+  font-family: 'Lato', sans-serif;
+}
+
+footer {
+  margin-top: 40px;
+  margin-bottom: -40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f9f9f9;
+}
+
+h1, h2 { font-family: 'Exo', sans-serif; font-weight: 300; text-transform: uppercase; }
+div.carousel-caption h1 {font-family: 'Exo', sans-serif; font-weight: 800; text-transform: none; }
+p, li { font-size: 18px;}
+p { margin-bottom: 30px;}
+.nav li {font-size: 14px;}
+a {color:#7ca5b7;}
+a:hover, a:focus, a:active{ color: #557991;}
+.btn-primary {
+    background-color: #e4173d;
+    border-color: #e4173d;}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #bd1433;
+  border-color: #bd1433;
+}
+.btn-primary.disabled {
+  background-color: #bbb;
+  border-color: #bd1433;
+}
+.col-lg-6:target {
+  padding-top: 50px;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-brand{
+    padding-top: 10px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 75px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-image: url(/img/awesome-inc-learn-to-code-homepage-bg.jpg);
+    background-size: cover;
+
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+  max-width: none;
+}
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0.2;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0.2;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0.2;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.center{
+    text-align: center;
+}
+.top-marketing{
+    margin-top: 60px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Spaaaaaace out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.featurette-heading a {
+  text-decoration: none;
+
+}
+
+.text-muted {color: #557991;}
+
+.embed-responsive{
+    margin-bottom: 15px;
+}
+
+/* Jumbotron
+---------------------------*/
+.bg-image {
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jumbotron {
+color: white;
+text-shadow: 1px 1px 1px #000000;
+height: 350px;
+background:transparent;
+}
+
+.jumbotron .modal {
+  color: #3e3e3e;
+  text-shadow:none;
+}
+
+.center-block{
+    float:none;
+}
+/* Jumbotron-Large
+---------------------------*/
+.jumbotron-large {
+  opacity: 1;
+  height: 500px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .jumbotron-large {
+  padding-top: 40px;
+  }
+}
+
+.jumbotron-mask {
+  width: 100%;
+  height: 500px; /*same height as jumbotron-large */
+  z-index: 0;
+  background-color: #555;
+  opacity: 0.6;
+  position: absolute;
+  top: 50px; /* offset for navbar */
+  left: 0;
+}
+
+.jumbotron-large legend, .jumbotron-large h1, .jumbotron-large p {
+  color: white;
+  opacity: 1;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+form {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Blog styles
+---------------------------*/
+/* Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blog-header h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column
+ */
+
+.blog-main, .content-main {
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.blog-main p, .content-main p {
+  margin-bottom: 30px;
+}
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+    width: 100%;
+}
+.blog-post img{
+    width: 100%;
+}
+.blog-main h1, .content-main h1 {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+.employer-list {
+    list-style: none;
+}
+
+/* PRESS PAGE
+-------------------------------------------------- */
+.press img {
+  width: 30%;
+  margin-left: 35%;
+}
+.row.press {
+  margin-bottom: 40px;
+}
+
+.container-clearfluid {
+  background-color: rgb(234, 234, 234);
+  padding: 25px 0;
+  margin-top: 40px;
+}
+
+/* NOTES
+-------------------------------------------------- */
+.notes img {   /*same as bootstrap's .img-responsive & .center-block */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+/* FAQ ACCORDIAN
+-------------------------------------------------- */
+.panel h3 {
+  margin: 5px;
+}
+
+.panel p {
+  margin: 5px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+
+/* ---- */
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* Fix taking mailchimp pop-up off mobile site */
+@media (max-width: 980px) {
+  .mc-modal {
+    top: 100px  !important;
+  }
+}
+
+@media (max-width:1024px){
+/* Fix parallax for mobile screen sizes */
+  .scrollup {
+      background-color: #fefefe;
+      padding-top: 20px;
+      width:100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
+#mc_embed_signup {
+  background-color: #fefefe;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+
+/* Fix padding for hash tag links, via https://css-tricks.com/hash-tag-links-padding/ */
+h2:before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+}
+
+/* SYNTAX HIGHLIGHTING for embedded code blocks
+-------------------------------------------------- */
+
+/* .highlight  { background: #ffffff; } */
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
+.highlight .lineno {-webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
+.lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
+.lineno::selection {background-color: transparent;} /* Other major browsers */
+
+
+
+/*****************************************************
+          Image Ribbons
+*****************************************************/
+
+
+/*ribbon adjustments per size*/
+.ribbon-wrapper-green{
+  margin-top: 11px;
+  margin-right: 25px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .ribbon-wrapper-green{
+      margin-right: 173px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .ribbon-wrapper-green{
+      margin-right: 174px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ribbon-wrapper-green{
+      margin-right: 120px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ribbon-wrapper-green{
+      display: none;
+    }
+}
+
+
+
+
+
+.ribbon-wrapper-green {
+  width: 120px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-green {
+  font: bold 11px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 19px;
+  width: 180px;
+  background-color: #cb232e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45));
+  background-image: -webkit-linear-gradient(top, #cb232e, #cb232e);
+  background-image:    -moz-linear-gradient(top, #cb232e, #cb232e);
+  background-image:     -ms-linear-gradient(top, #cb232e, #cb232e);
+  background-image:      -o-linear-gradient(top, #cb232e, #cb232e);
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:before, .ribbon-green:after {
+  content: "";
+  border-top:   3px solid #6e8900;
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-green:before {
+  left: 0;
+}
+.ribbon-green:after {
+  right: 0;
+}​
+
+.ribbon-wrapper-green{
+  margin-right: 32%;
+}
+
+/* above ribbon */
+
+@media screen and (min-width: 767px) {
+    .ribbon{
+      display: none;
+    }
+}
+
+.ribbon {
+ font-size: 15px !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 32%;
+ position: relative;
+ background: #cb232e;
+ color: #FFFFFF;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #c6050f;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #b7030c transparent transparent transparent;
+ bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+/* isotope css */
+
+ul#filters {
+  float: left;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+ul#filters li {
+  float: left;
+  position: relative;
+  list-style: none;
+  padding: 0 10px;
+  color: #666;
+  font-size: 18px;
+  font-family: Times New Roman, Times, Serif;
+  border-right: 1px solid #bbb;
+}
+
+ul#filters li:last-child {
+  border-right: none;
+}
+
+ul#filters li a {
+  color: #666;
+  border-bottom:none;
+}
+
+.alumnis {
+  list-style: none;
+  position: relative;
+  margin: 0 0 20px 10px;
+  padding: 0;
+}
+
+.alumnis li {
+  float: left;
+  margin: 10px;
+  background: #fff;
+  padding: 8px;
+  position: relative;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.alumnis li a,
+.alumnis li a img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+}
+
+.alumnis li a {
+  overflow: hidden;
+
+}
+.alumnis li a div {
+  position: absolute;
+  background: #333;
+  background: rgba(213, 1, 1, 0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.alumnis li a div > span.name {
+  display: block;
+  padding: 10px 0;
+  margin: 40px 20px 20px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+
+.alumnis li a div > span.name > .company {
+  font-style:italic;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.alumnis li a div > span.view-bio {
+  text-transform: none;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.title {
+  font-family: Times New Roman, Times, Serif;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 15px;
+  margin: 15px 0 30px;
+  height: 52px;
+}
+
+.title h2 {
+  font-weight: 100;
+  color: #666;
+  font-size: 28px;
+  margin: 5px 0;
+  float:left;
+}
+
+.container > .content > .row-fluid > .span4 > .title {
+  display:inline-block;
+  float: right;
+}
+
+.container > .content > .row-fluid > .span4 > .title h2 {
+  display:inline-block;
+  padding-right: 10px;
+  margin: 0px;
+}
+
+.container > .content > .row-fluid > .span4 > .title h2 .link {
+  max-height:50px;
+  display: inline;
+  padding: 5px;
+  float:left;
+  display:inline;
+  width:match-child;
+}
+
+.btn-group > a{
+  width: 77px !important;
+  height: 34px !important;
+}
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}

@@ -1,0 +1,95 @@
+/*****************************************************
+						Colors
+*****************************************************/
+/*****************************************************
+						Variables
+*****************************************************/
+/*****************************************************
+						Sizes
+*****************************************************/
+/*****************************************************
+					Hover States
+*****************************************************/
+/*****************************************************
+					Consistencies
+*****************************************************/
+.center { text-align: center; margin: auto; display: block; }
+
+.right-padding { padding-right: 20px; }
+
+.left-padding { padding-left: 20px; }
+
+/******************************* Red button Rounded edges White font ******************************/
+.btn-action { background-color: #b81124; color: white; border-color: #b81124; border-radius: 6px; font-size: 18px; padding: 2px 14px; font-weight: 400; margin-bottom: 20px; }
+.btn-action:hover, .btn-action:active, .btn-action:focus { background-color: #dc1124; border-color: #dc1124; }
+.btn-action i { margin-left: 2px; }
+
+/*****************************************************
+						Panels
+*****************************************************/
+.panels { /* < 768 */ /* < 768 */ }
+.panels h2 { margin-bottom: 35px; }
+.panels .right-padding { padding-left: 0; }
+.panels .left-padding { padding-right: 0; }
+@media (max-width: 767px) { .panels .right-padding { padding-left: 15px; }
+  .panels .left-padding { padding-right: 15px; } }
+.panels .panel-custom { border: none; background-color: #CECECE; /*min-height: 350px;*/ position: relative; /* < 768 */ /* < 768 */ /* < 768 */ }
+@media (max-width: 767px) { .panels .panel-custom { min-height: 300px; } }
+.panels .panel-custom .panel-heading { background-color: #b81124; color: white; font-size: 22px; font-weight: 600; border: none; }
+.panels .panel-custom img { margin-top: 30px; margin-bottom: 25px; }
+.panels .panel-custom div.panel-body { text-align: justify; }
+@media (max-width: 767px) { .panels .panel-custom div.panel-body { height: 175px; } }
+.panels .panel-custom button { /*margin-bottom: 20px;*/ }
+.panels .panel-custom .modal-footer p { margin-bottom: 0; }
+@media (max-width: 767px) { .panels .panel-custom p { font-size: 12px; } }
+.panels .panel-footer { background-color: #CECECE; border-top: none; }
+.panels .panel-footer > a.btn { width: 30%; /* < 768 */ }
+@media (max-width: 767px) { .panels .panel-footer > a.btn { width: 50%; } }
+.panels .panel-body { display: flex; flex-grow: 1; }
+@media (max-width: 767px) { .panels .panel > a.btn { width: 50%; } }
+.panels .panel-feature { background-color: #a5a5a5; }
+.panels .panel-feature .panel-heading { background-color: #960017; }
+.panels .modal .modal-dialog { width: 75%; }
+.panels .modal img { margin-top: 0; margin-bottom: 0; }
+.panels .modal table td { vertical-align: middle; }
+
+.Programming h2 { font-weight: 600; }
+
+.row .col-md-5 { /* > 1024 */ }
+@media (min-width: 1024px) { .row .col-md-5 img { margin-top: 75px; } }
+.row .col-md-5 { /* 768-1023 */ }
+@media (min-width: 768px) and (max-width: 1023px) { .row .col-md-5 img { margin-top: 80px; max-width: 400px; } }
+
+/*****************************************************
+				Full Screen Header
+*****************************************************/
+.page-wrap { z-index: 100; }
+.page-wrap header { height: 100vh; background-image: url("/img/awesome-inc-learn-to-code-homepage-bg-grayscale.jpg"); background-size: cover; z-index: 2; display: flex; flex-flow: column; justify-content: center; position: relative; }
+.page-wrap header::after { display: block; position: fixed; }
+.page-wrap header::before { content: ""; top: 0; left: 0; width: 100%; height: 100%; position: absolute; background: rgba(0, 0, 0, 0.4); }
+.page-wrap h1 { position: relative; display: inline-block; text-align: center; margin-bottom: -10px; z-index: 1; font-size: 42px; font-weight: 600; color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); font-family: 'Lato', sans-serif; }
+.page-wrap h2 { position: relative; display: inline-block; text-align: center; margin-bottom: -10px; z-index: 1; font-size: 52px; font-weight: 800; color: white; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+.page-wrap hr { border-top: 4px solid #ff3769; width: 15%; margin: 30px auto; }
+.page-wrap p { text-align: center; z-index: 3; margin-bottom: 50px; }
+.page-wrap p a.btn { background-color: white; color: #c7254e; border: none; margin: 0 25px; font-weight: 600; }
+
+/*****************************************************
+				Creative Link Hovers
+*****************************************************/
+.cl-link-effect { position: relative; display: inline-block; /*margin: 15px 25px;*/ /*outline: none;*/ /*color: #fff;*/ text-decoration: none; /*text-transform: uppercase;*/ letter-spacing: 1px; font-weight: 400; text-shadow: 0 0 1px rgba(255, 255, 255, 0.3); font-size: 1em; overflow: hidden; padding: 0; /*height: 1em;*/ }
+.cl-link-effect.alumni { margin: 0; }
+
+.cl-link-effect { position: relative; z-index: 1; }
+
+.cl-link-effect { overflow: hidden; margin: 0 15px; }
+
+.cl-link-effect span { display: block; padding: 10px 20px; background: white; -webkit-transition: -webkit-transform 0.3s; -moz-transition: -moz-transform 0.3s; transition: transform 0.3s; }
+.cl-link-effect.alumni span { background: #ed3743; color: white; }
+
+.cl-link-effect::before { position: absolute; top: 0; left: 0; z-index: -1; padding: 10px 20px; width: 100%; height: 100%; background: #c7254e; color: white; content: attr(data-hover); -webkit-transition: -webkit-transform 0.3s; -moz-transition: -moz-transform 0.3s; transition: transform 0.3s; -webkit-transform: translateX(-25%); }
+
+.cl-link-effect.alumni::before { background: white; color: #ed3743; }
+
+.cl-link-effect:hover span, .cl-link-effect:focus span { -webkit-transform: translateX(100%); -moz-transform: translateX(100%); transform: translateX(100%); }
+
+.cl-link-effect:hover::before, .cl-link-effect:focus::before { -webkit-transform: translateX(0%); -moz-transform: translateX(0%); transform: translateX(0%); }

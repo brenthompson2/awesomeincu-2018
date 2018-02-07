@@ -1,0 +1,45 @@
+---
+layout: page
+permalink: /press/
+title: Press
+---
+
+<div class="container blog-main">
+    <h1>{{page.title}}</h1>
+    <hr>
+    <h3>As seen on: </h3>
+    <div class="row press">
+        <div class="col-md-2 col-md-offset-1">
+            <a href="http://www.lex18.com/" target="_blank">
+                <img src="/img/press/nbc-logo.png" alt="nbc news logo" class="img-responsive">
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="http://www.wtvq.com/" target="_blank">
+                <img src="/img/press/abc-logo.png" alt="abc news logo" class="img-responsive">
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="http://www.wtvq.com/dayguests/" target="_blank">
+                <img src="/img/press/good_day_ky.png" alt="good day kentucky logo" class="img-responsive">
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="https://www.coursereport.com/" target="_blank">
+                <img src="/img/press/course_report.png" alt="course report logo"  class="img-responsive" style="width: 50%; margin-left: 25%; margin-top: 8px;">
+            </a>
+        </div>
+        <div class="col-md-2">
+            <a href="http://www.foxlexington.com/newsroom/" target="_blank">
+                <img src="/img/press/fox-logo.png" alt="fox news logo" class="img-responsive" style="margin-top: 5%; width: 50%;">
+            </a>
+        </div>
+    </div>
+    <hr>
+    
+        <ul>
+          {% for article in site.data.press %}
+          <li>{{ article.date | date: "%b %d, %Y" }} <a href="{{ article.url }}" target="_blank">{{ article.title }}</a>, {{ article.source }}</li>
+          {% endfor %}
+       
+   </div>

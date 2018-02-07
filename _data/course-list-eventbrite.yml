@@ -1,0 +1,113 @@
+# Note: convention is that 
+# upcoming classes are moved to top of list, in chronological order. 
+# Inactive classes should be moved to end of list.
+# Note 2.0: Because of the carousel, some are out of chrono order
+
+- title: Week of Code Summer Camp - Lexington (June)
+  headline: "Spend your summer making apps, games, and websites"
+  age_range: 11-16
+  curriculum: k12-week
+  date: June 5 - June 8
+  time: 1pm - 5pm
+  early-bird-price: 495
+  standard-price: 595
+  early-bird-date: May 1
+  url: https://www.eventbrite.com/e/week-of-code-summer-camp-june-lexington-tickets-32132513212?aff=es2
+  logo: Week-of-Code-Logo.png
+  status: 'active'
+  feature: true
+
+- title: Week of Code Summer Camp - Lexington (June)
+  headline: "Spend your summer making apps, games, and websites"
+  age_range: 11-16
+  curriculum: k12-week
+  date: June 19 - June 22
+  time: 1pm - 5pm
+  early-bird-price: 495
+  standard-price: 595
+  early-bird-date: May 1
+  url: https://www.eventbrite.com/e/week-of-code-summer-camp-june-lexington-tickets-32166551020?aff=es2
+  logo: Week-of-Code-Logo.png
+  status: 'active'
+
+- title: Week of Code Summer Camp - Lexington (July)
+  headline: "Spend your summer making apps, games, and websites"
+  age_range: 11-16
+  curriculum: k12-week
+  date: July 10 - July 13
+  time: 1pm - 5pm
+  early-bird-price: 495
+  standard-price: 595
+  early-bird-date: May 1
+  url: https://www.eventbrite.com/e/week-of-code-summer-camp-july-lexington-tickets-32167073583?aff=es2
+  logo: Week-of-Code-Logo.png
+  status: 'active'
+
+- title: Week of Code Summer Camp - Lexington (August)
+  headline: "Spend your summer making apps, games, and websites"
+  age_range: 11-16
+  curriculum: k12-week
+  date: Aug 7 - Aug 10
+  time: 1pm - 5pm
+  early-bird-price: 495
+  standard-price: 595
+  early-bird-date: April 1
+  url: https://www.eventbrite.com/e/week-of-code-summer-camp-august-lexington-tickets-32167133763?aff=es2
+  logo: Week-of-Code-Logo.png
+  status: 'active'
+
+- title: Coding Club
+  headline: Have fun and learn to code with other kids! (Ages 9-12)
+  age_range: 9-12
+  curriculum: club
+  date: Jan 10 - May 2, Tuesdays
+  time: 5-6:30pm
+  early-bird-price: 
+  standard-price: 120/month
+  early-bird-date:
+  url: https://www.eventbrite.com/e/awesome-inc-after-school-coding-club-spring-2017-tuesdays-tickets-29642641940?aff=es2
+  logo: logo_big.png
+  status: 'active'
+  feature: true
+
+- title: Coding League
+  headline: Learn To Code Like The Pros (Ages 11-14)
+  age_range: 11-14
+  curriculum: league
+  date: Jan 12 - May 4, Thursdays
+  time: 5-6:30pm
+  early-bird-price: 
+  standard-price: 120/month
+  early-bird-date:
+  url: https://www.eventbrite.com/e/awesome-inc-coding-league-spring-2017-thursdays-tickets-26529760227
+  logo: logo_big.png
+  status: 'active'
+  feature: true
+
+- title: Academy
+  headline: Our premier training program for teens (Ages 13 - 17)
+  age_range: 13-17
+  curriculum: academy
+  date: Jan 24 - Apr 27, Tues & Thurs
+  time: 6-8pm
+  early-bird-price: 429/month
+  standard-price: 533/month
+  early-bird-date: Jan 6
+  url: /academy/
+  logo: logo_big.png
+  status: 'active'
+
+- title: Minecraft Party
+  headline: "Play games and learn some code, too! (Ages 8 - 14)"
+  curriculum: minecraft
+  age_range: 8-14
+  date: May 12
+  time: 6-9pm
+  early-bird-price: 30
+  standard-price: 45
+  early-bird-date: May 1
+  url: https://www.eventbrite.com/e/awesome-inc-u-minecraft-party-tickets-28705654385
+  logo: minecraft.png
+  status: 'active'
+
+# Note: Inactive Courses below here

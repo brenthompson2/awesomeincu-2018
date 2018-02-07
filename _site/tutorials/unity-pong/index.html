@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    _                                           ___
+   / \__      _____  ___  ___  _ __ ___   ___  |_ _|_ __   ___
+  / _ \ \ /\ / / _ \/ __|/ _ \| '_ ` _ \ / _ \  | || '_ \ / __|
+ / ___ \ V  V /  __/\__ \ (_) | | | | | |  __/  | || | | | (__
+/_/   \_\_/\_/ \___||___/\___/|_| |_| |_|\___| |___|_| |_|\___|
+  Growing High-Tech Startups in Lexington, Kentucky. #horses
+-->
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:description" content="Let’s Make: PONG
+
+">
+<meta property="og:url" content="http://localhost:4000/tutorials/unity-pong/">
+<meta name="author" content="Awesome Inc">
+<meta property="og:title" content="Make A Pong Game With Unity 2D">
+<title>Make A Pong Game With Unity 2D | Awesome Inc U</title>
+<link rel="icon" href="/img/favicon.ico">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- External CSS -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,700|Exo:300,800" rel="stylesheet" type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<link href="/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/css/jekyll-tutorial.css" rel="stylesheet" type="text/css">
+<!-- my ip tracking -->
+<script type="text/javascript" src="https://l2.io/ip.js?var=myip"></script>
+<!-- Google Analytics -->
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-40742716-1', 'auto');
+    ga('send', 'pageview', {
+        'dimension1':  myip
+    });
+</script>
+
+        <!-- 
+	facebook pixel conversion tracking 
+	created on: 5/7/2016
+	last updated: 1/6/2017
+-->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1732394227046919'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1732394227046919&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+        <script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"77464144f0307e5d43de560d9806d2fdd98dbf1a8dba0fb4a61a9630fe7d7d5c1e92507c13fa0fac71e5ac4fb3822ca1", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img alt="Awesome Inc U" src="/img/Logo_Horizontal_white.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+            </ul>
+            <ul class="nav nav-pills navbar-nav navbar-right">
+                <li><p class="navbar-btn"><a class="btn btn-default" href="/youth/" role="button">Youth Courses</a></p></li>
+                <li><p class="navbar-btn"><a class="btn btn-default" href="/adults/" role="button">Adult Courses</a></p></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+        <div class="Make">
+           <div>
+    
+    	<div class="container">
+    		
+  			<div class="row head1">
+    			<div class="col-md-12" >
+    				<h2>Make A Pong Game With Unity 2D <a class="btn btn-primary" href="/register/" role="button">Register</a></h2>
+    			</div>
+      	</div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 notes">
+          <h1 id="lets-make-pong">Let’s Make: PONG</h1>
+
+<p><img src="/img/tutorials/unity-pong/classic_pong_screenshot.png" alt="Classic Pong screenshot" /></p>
+
+<p>By Will Oldham. Updates by <a href="https://github.com/nicksuch/" target="_blank">Nick Such</a> and <a href="https://github.com/TheSpydog/" target="_blank">Caleb Cornett</a>.</p>
+
+<blockquote>
+  <p>Note, July 2017: Updated for Unity 5.6</p>
+</blockquote>
+
+<p>Today, the name of the game is Pong. We’re going to be using Unity v5.6 or later, and we’ll use C# as our coding language. No prior experience with Unity or C# is required. It will only take you about two hours to complete the tutorial, and at the end you’ll have made your own version of Pong!</p>
+
+<p>Ready? It’s gonna be awesome.</p>
+
+<p>So, when we think about making Pong, we might think of several simple mechanics that need to be created:</p>
+
+<ol>
+  <li>
+    <p>You have a Background to play on</p>
+  </li>
+  <li>
+    <p>You have a set of Paddles that go up and down</p>
+  </li>
+  <li>
+    <p>You have a ball that bounces off walls and paddles</p>
+  </li>
+  <li>
+    <p>You have a set of side walls that you hit to score</p>
+  </li>
+  <li>
+    <p>You have a score at which you win</p>
+  </li>
+  <li>
+    <p>You have a rage quit button (or reset button)</p>
+  </li>
+</ol>
+
+<p>Seems simple enough. Let’s get started!</p>
+
+<h2 id="step-one-the-setup">Step One: The Setup</h2>
+
+<p>First, download this <a href="/files/unity-pong-assets.zip" target="_blank">Unity Pong assets file</a>. It contains images and other assets that we’ll be using in this tutorial.</p>
+
+<p>Now, let’s start with the paddles. Open up Unity and follow these steps:</p>
+
+<ol>
+  <li>
+    <p>From the welcome screen, click ‘Projects’. (If the Unity editor is already open, click ‘File’ &gt; ‘New Project’ instead.)</p>
+  </li>
+  <li>
+    <p>Click ‘New’. Then you should see something like this:
+<img src="/img/tutorials/unity-pong/new_project.png" alt="Unity's New Project window" /></p>
+  </li>
+  <li>
+    <p>Name the Project something like ‘Pong Game’.</p>
+  </li>
+  <li>
+    <p>Make sure you choose ‘2D’ and not ‘3D’. I think 3D Pong is a little ambitious for our first go, so 2D is a better choice.</p>
+  </li>
+  <li>
+    <p>Set the slider for ‘Enable Unity Analytics’ to Off.</p>
+  </li>
+  <li>
+    <p>Hit ‘Create Project’. And that’s it!</p>
+  </li>
+</ol>
+
+<p>Once the project has been created, you should see a 2D grid appear in the Scene view. If you don’t, make sure the ‘2D’ button is pressed along the top toolbar of Scene view. (You can see it highlighted in yellow in this image.)</p>
+
+<p><img src="/img/tutorials/unity-pong/2d_button.png" alt="2D Toolbar Button" /></p>
+
+<p>Setting up Unity in 2D mode does several things. First off, it sets up our game camera so that everything is viewed from a 2D perspective. It also tells Unity to import images as Sprites instead of Textures. You’ll see how this helps us in just a bit.</p>
+
+<p>Remember that <a href="/files/unity-pong-assets.zip" target="_blank">Unity Pong assets file</a> that we downloaded? Now’s a great time to unzip that file. You’ll see a folder called <code class="highlighter-rouge">unitypong-assets</code>, which will contain a set of images, fonts, and other assets that we’ll be using today. Select all, <kbd>click + drag</kbd> these files into the Project pane at the bottom of your Unity window. They should end up in your Assets folder. If your Unity Editor window looks much different, then you may want to set your editor Layout to “Default”.</p>
+
+<p><img src="/img/tutorials/unity-pong/unitypong-assets.png" alt="Downloaded assets" /></p>
+
+<p>The background image is going to be in your Assets folder as “Background.jpg”. You can add and use another background image you want, but by doing this, you may have to adjust some size or view settings. You should see it in your Project pane:</p>
+
+<p><img src="/img/tutorials/unity-pong/background_project_pane.png" alt="Background image selected in Project pane" /></p>
+
+<p>Drag the image into the Hierarchy pane, just below <code class="highlighter-rouge">Main Camera</code>. It should appear in your Scene view, and be centered by default. If it’s not centered, use the Inspector pane to set its Transform Position to <code class="highlighter-rouge">(0, 0, 0)</code>. If this doesn’t work, make sure you set that 2D perspective lock set in the menu bar above your Scene. Select your Background, now in the Hierarchy pane, and you should see it show up in the Inspector pane like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/background_hierarchy_pane.png" alt="Background image in hierarchy" /></p>
+
+<p>First, up at the top of the Inspector under ‘Transform’, change its scale to <code class="highlighter-rouge">(0.75, 0.75, 1)</code>. This will make it look better in our game. Now look at the ‘Sprite Renderer’ component. We want to make sure the background actually renders behind our other sprites. Go to ‘Sorting Layer’, and click ‘Add Sorting Layer’. The Inspector pane should now look like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/sorting_layer.png" alt="Sorting Layers" /></p>
+
+<p>Click the + icon to add our new layer. Change its name from ‘New Layer’ to ‘Background’, then click and drag our new layer above the Default layer. This makes it so that anything on the Background sorting layer will appear behind anything on the Default layer, which is exactly what we want.</p>
+
+<p>Now re-select your Background object in the Hierarchy pane so that it will show up in the Inspector again. In the ‘Sprite Renderer’ component, click the dropdown menu for Sorting Layer and choose our new ‘Background’ layer. Your Inspector should look like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/background_sorting_layer.png" alt="Background image in Background Sorting layer" /></p>
+
+<p>Now we’re cooking. Select the Main Camera object in your Hierarchy pane. The camera object controls how we see the game world (or ‘Scene’, in Unity terms). When we’re playing our Pong game, it’s actually possible that our background won’t be big enough to cover the whole screen. We need to make two small changes in our Main Camera to take care of that.</p>
+
+<p>In the Inspector, under the ‘Camera’ component, change the ‘Size’ to <code class="highlighter-rouge">3</code>. This will zoom in slightly on our background. Next, click on the ‘Background’ property of the Camera. This lets us change the color that will be visible on the edges of our screen if the background isn’t big enough. In the color picker, choose the color black, with RGBA values of <code class="highlighter-rouge">(0,0,0,0)</code>. Then the Camera component in the Inspector should look like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/main_camera_inspector.png" alt="MainCamera properties" /></p>
+
+<p>All right! Now is a great time to save your Scene. Go to File -&gt; Save Scene As… We’re going to call our Scene ‘Main’, and we can save it right in our Assets folder. Once you save, you should see a file called <code class="highlighter-rouge">Main.unity</code> from your Project pane.</p>
+
+<p><img src="/img/tutorials/unity-pong/saved_scene_main.png" alt="Save Scene file as Main.unity" /></p>
+
+<h2 id="step-two-the-paddles">Step Two: The Paddles</h2>
+
+<p>The next obvious step is to make our paddles. Find the image called ‘PongPaddle’ in the Assests folder, within your Project pane.</p>
+
+<p>Now drag the paddle onto the scene in scene view. A ‘Player’ object should appear in your Hierarchy menu. Rename that to Player01. Cool. Click on that. Over in the Inspector, click the Tag dropdown and select ‘Player’. Set Position to (X, Y, Z) = <code class="highlighter-rouge">(-4, 0, 0)</code> and Scale to <code class="highlighter-rouge">(0.5, 1.5, 1)</code>. It should look like this in the Inspector:</p>
+
+<p><img src="/img/tutorials/unity-pong/inspector_4.png" alt="Player setup" /></p>
+
+<p>All we’re doing here is making sure that the paddle is positioned where we want it. You could position it wherever, but I like this location the best. The Sorting Layer and other settings don’t matter this time because we want this object to be drawn on top, which is what Unity defaults to.</p>
+
+<p>Next we’re going to add two components to the Player object. Click on the ‘Add Component’ button, and then on ‘Physics 2D.’ Once you’ve done that add both a ‘Box Collider 2D’ and a ‘Rigidbody 2D.’ The Box Collider 2D is to make sure the ball will bounce off your paddle, and the Rigidbody 2D is there so we can move the paddle around.</p>
+
+<p>Note: It’s important to use Physics, BoxCollider, and RigidBody <strong>2D</strong> here because 3D versions of those exist - that’s not what we want in our 2D game though.</p>
+
+<p>Now, we’re going to make a few changes to the ‘Rigidbody 2D’ component. Unity has a great, realistic physics system built in that calculates the effects of gravity, friction, and other forces on any object that has a Rigidbody 2D component. That system is often very handy, but we don’t want to use it for our paddles. Our paddles aren’t exactly realistic – they’re just kind of floating in space and they only move when we tell them to. Thankfully Unity gives us a way to tell our Rigidbody 2D to only move when we tell it to. We just have to click the ‘Body Type’ dropdown menu and select ‘Kinematic’.</p>
+
+<p>Your Inspector should now look like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/player01_physics.png" alt="Physics - Box Collider 2D and Rigidbody 2D" /></p>
+
+<p>Now we want to do the hard part: add a Script for movement for our paddles. I’m going to share the code below. I recommend typing each line. It might seem quicker to copy and paste code, but typing it yourself really does help you understand it.</p>
+
+<p>To add a script, make sure that Player01 is still selected in your Hierarchy pane, then go to ‘Add Component’, and then ‘New Script.’ Call this one ‘PlayerControls’ and make sure the language is C# (or CSharp, as it is spelled out in Unity). Hit ‘Create and Add’. Now <kbd>double click</kbd> the icon that appears below in the Project pane to open it up in <a href="http://en.wikipedia.org/wiki/MonoDevelop">MonoDevelop</a>, Unity’s Integrated Development Environment (or IDE) - essentially, it’s the program we use to write Unity scripts. On Windows, you may be using Microsoft’s Visual Studio IDE, but this process will be similar.</p>
+
+<p><img src="/img/tutorials/unity-pong/image_6.png" alt="Create New Script" /></p>
+
+<h3 id="code-breakdown">Code Breakdown</h3>
+
+<p>In short, the first three lines are packages of pre-written code we want to tell our program it can use.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>The next line is the class name, the name of our file. It’s the same thing that we named our Component.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerControls</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>The next few lines are variables we need to write ourselves. The first two lines we add will denote the keys that we’ll press to move the paddles (W goes up, S goes down), and the next one is the speed of the paddle. The ‘boundY’ variable is the highest position that we want our paddle to go. This keeps it from moving off the edges of the screen. The last variable is a reference to our Rigidbody that we’ll use later.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">KeyCode</span> <span class="n">moveUp</span> <span class="p">=</span> <span class="n">KeyCode</span><span class="p">.</span><span class="n">W</span><span class="p">;</span>
+<span class="k">public</span> <span class="n">KeyCode</span> <span class="n">moveDown</span> <span class="p">=</span> <span class="n">KeyCode</span><span class="p">.</span><span class="n">S</span><span class="p">;</span>
+<span class="k">public</span> <span class="kt">float</span> <span class="n">speed</span> <span class="p">=</span> <span class="m">10.0f</span><span class="p">;</span>
+<span class="k">public</span> <span class="kt">float</span> <span class="n">boundY</span> <span class="p">=</span> <span class="m">2.25f</span><span class="p">;</span>
+<span class="k">private</span> <span class="n">Rigidbody2D</span> <span class="n">rb2d</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>By making these variables ‘public,’ we can adjust them through our Unity interface as well. If we have variables we don’t want other developers to see in the Unity interface, we should call them ‘private’.</p>
+
+<p><code class="highlighter-rouge">Start()</code> is a function that is called when we first launch our game. We’ll use it to do some initial setup, such as setting up our Rigidbody2D:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">rb2d</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody2D</span><span class="p">&gt;();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">Update()</code> is a function that is called once per frame. We’ll use it to tell us what button is being pressed, and then move the paddle accordingly, or, if no button is pressed, keep the paddle still. Lastly we’ll bound the paddle vertically between +boundY and -boundY, which will keep it inside the game screen at all times.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">Update</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">vel</span> <span class="p">=</span> <span class="n">rb2d</span><span class="p">.</span><span class="n">velocity</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="nf">GetKey</span><span class="p">(</span><span class="n">moveUp</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">vel</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="n">speed</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="nf">GetKey</span><span class="p">(</span><span class="n">moveDown</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">vel</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="p">-</span><span class="n">speed</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(!</span><span class="n">Input</span><span class="p">.</span><span class="n">anyKey</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">vel</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">rb2d</span><span class="p">.</span><span class="n">velocity</span> <span class="p">=</span> <span class="n">vel</span><span class="p">;</span>
+
+    <span class="kt">var</span> <span class="n">pos</span> <span class="p">=</span> <span class="n">transform</span><span class="p">.</span><span class="n">position</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">y</span> <span class="p">&gt;</span> <span class="n">boundY</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">pos</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="n">boundY</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">y</span> <span class="p">&lt;</span> <span class="p">-</span><span class="n">boundY</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">pos</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="p">-</span><span class="n">boundY</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">transform</span><span class="p">.</span><span class="n">position</span> <span class="p">=</span> <span class="n">pos</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><em>NOTE: Make sure that you name your functions the same thing that I do. For instance, Unity knows to run the ‘Update()’ once every frame, because it is called ‘Update()’. If you called it anything else (for instance, if you typed ‘update’ with a lowercase ‘u’ or misspelled it like ‘Updaate’), it will not work. When you’re writing code, you have to be exact or the computer might misunderstand what you want it to do.</em></p>
+
+<p>Cool. Save that, and exit out. Now, when we go back to Unity, we should have a paddle that moves. To test our game, <kbd>click</kbd> the play button (►) at the top of the screen. Use the W and S keys to move. Does it work? Awesome!</p>
+
+<p>Now, it’s important to note something here. You have just entered ‘Play Mode’. This is a really neat feature in Unity that lets you not only test your game but also make changes to it while you’re playing! You’ll know you’re in Play Mode when the editor gets darker and your play button looks like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/playmode.png" alt="Play mode symbol" /></p>
+
+<p>Try clicking the Player01 object in the Hierarchy and changing the position of the paddle in the Inspector while the game is running in Play Mode. This is super handy for trying out new ideas in real time. But I have to warn you:</p>
+
+<p><em>The changes you make during Play Mode do not stay when you close Play Mode.</em></p>
+
+<p>In other words, always make sure you have stopped Play Mode (by pressing the play button (►) again) before you make significant changes to the game. Otherwise all your recent work will be erased whenever you stop testing the game. Trust me, that’s no fun.</p>
+
+<p>Go back to the scene view, and click on our ‘Player01’ object. Under the Inspector pane, you should see a place to change the key bindings for up and down, the speed that it moves at, and the bounding value for the paddle’s position. Mess around with those as you please.</p>
+
+<p>The next step is to make a second paddle. All we need to do is <kbd>right click</kbd> ‘Player01’ in the Hierarchy menu, and choose Duplicate from the menu that appears when we right click. Rename it to be ‘Player02’. Next, change its key bindings (I recommend using ‘Up Arrow’ for up and ‘Down Arrow’ for down), and move it to be the opposite location on the board - change the X value in its Transform Position to be positive. Player01 should be on the left, Player02 on the right. Now go to ‘Game’ and test this one too. That work? AWESOME! You should have something that looks like this now:</p>
+
+<p><img src="/img/tutorials/unity-pong/image_12.png" alt="image alt text" /></p>
+
+<p>If so, move on - if not, go back and make sure you’ve done everything right. Your completed C# script should look like this: <a href="https://github.com/ainc/unity-pong/blob/unity5/Assets/PlayerControls.cs">PlayerControls.cs</a></p>
+
+<h2 id="step-three-the-ball">Step Three: The Ball</h2>
+
+<p>You’ve made it to the Ball. Congrats! Things get more complicated from here on, but remember, harder is funner (Let’s just pretend that’s a word)!</p>
+
+<p>The first step is going to be finding the Ball image in the Project pane. Drag the Ball into the Scene, same as our Paddles. There should now be an object in the Hierarchy pane named ‘Ball’. Click on it, then head over to the Inspector pane to get the ball rolling. First, add a custom Tag called “Ball”, then go back and assign this new tag to our Ball. (This process is just like when you added a Sorting Layer to your background, except you click ‘Add Tag’ instead of ‘Add Sorting Layer’.)</p>
+
+<p><img src="/img/tutorials/unity-pong/assign_ball_tag.png" alt="Tagging the Ball" /></p>
+
+<p>Next, change the scale of our ball to <code class="highlighter-rouge">(0.5, 0.5, 1)</code>. A smaller ball helps make the game not quite so awkward.</p>
+
+<p>Next we need to add similar components that we did to the paddle. Click the Add Component button, then in Physics 2D, let’s add ‘Circle Collider 2D’ and of course ‘Rigidbody 2D.’ In the Circle Collider, change the Radius to <code class="highlighter-rouge">0.23</code>. That way the collider wraps around the ball much tighter.</p>
+
+<p>We also want to apply a Physics 2D Material. You can use the ‘BallBounce’ Material that was in the dowloadable assets pack for this. If you select it and look at the Inspector, you’ll see the friction value is <code class="highlighter-rouge">0</code>, and the bounce factor is <code class="highlighter-rouge">1</code>. That way our ball doesn’t experience friction from anything, including our paddles and wall. The bounciness factor means that it also doesn’t lose any speed. It bounces back with the exact same speed it hit the object with.</p>
+
+<p>To apply the material, select ‘Ball’ in the inspector. Drag ‘BallBounce’ to the ‘Circle Collider 2D’ box. We also need to adjust several settings in ‘Rigidbody 2D’ so we can get our desired pong ball behavior. It should look like this at the end:</p>
+
+<p><img src="/img/tutorials/unity-pong/ball_inspector_physics.png" alt="Physics settings for Ball" /></p>
+
+<p>But of course, to actually get the Ball to move, we need a script. With ‘Ball’ still selected in your Hierarchy, click Add Component in the Inspector pane. Create a New Script, this time called ‘BallControl’, with the C Sharp language selected. <kbd>Double click</kbd> on the new BallControl script to open it in MonoDevelop. I’ll do the same thing as before, and post the code with an explanation of what’s happening:</p>
+
+<h3 id="code-breakdown-1">Code Breakdown</h3>
+
+<p>First, as always, we import our packages and confirm that our class name matches our filename.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">BallControl</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>We need to declare a couple variables that we’ll use later.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="n">Rigidbody2D</span> <span class="n">rb2d</span><span class="p">;</span>
+<span class="k">private</span> <span class="n">Vector2</span> <span class="n">vel</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>We also need a <code class="highlighter-rouge">GoBall()</code> function, that will choose a random direction (left or right), then make the ball start to move.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">GoBall</span><span class="p">(){</span>
+    <span class="kt">float</span> <span class="n">rand</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="nf">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">2</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">rand</span> <span class="p">&lt;</span> <span class="m">1</span><span class="p">){</span>
+        <span class="n">rb2d</span><span class="p">.</span><span class="nf">AddForce</span><span class="p">(</span><span class="k">new</span> <span class="nf">Vector2</span><span class="p">(</span><span class="m">20</span><span class="p">,</span> <span class="p">-</span><span class="m">15</span><span class="p">));</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">rb2d</span><span class="p">.</span><span class="nf">AddForce</span><span class="p">(</span><span class="k">new</span> <span class="nf">Vector2</span><span class="p">(-</span><span class="m">20</span><span class="p">,</span> <span class="p">-</span><span class="m">15</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>In our <code class="highlighter-rouge">Start()</code> function, we’ll initialize our <code class="highlighter-rouge">rb2d</code> variable. Then we’ll call the <code class="highlighter-rouge">GoBall()</code> function, using <code class="highlighter-rouge">Invoke()</code>, which <a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.Invoke.html">allows us to wait</a> before execution. This will wait two seconds to give players time to get ready before the ball starts moving.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">rb2d</span> <span class="p">=</span> <span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody2D</span><span class="p">&gt;();</span>
+    <span class="nf">Invoke</span><span class="p">(</span><span class="s">"GoBall"</span><span class="p">,</span> <span class="m">2</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">ResetBall()</code> and <code class="highlighter-rouge">ResartGame()</code> are two functions used by other scripts which we will write later. <code class="highlighter-rouge">ResetBall()</code> is used when a win condition is met. It stops the ball, and resets its position to the center of the board.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">ResetBall</span><span class="p">(){</span>
+    <span class="n">vel</span> <span class="p">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+    <span class="n">rb2d</span><span class="p">.</span><span class="n">velocity</span> <span class="p">=</span> <span class="n">vel</span><span class="p">;</span>
+    <span class="n">transform</span><span class="p">.</span><span class="n">position</span> <span class="p">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">zero</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">RestartGame()</code> is used when our restart button is pushed. We’ll add that button later. This function uses <code class="highlighter-rouge">ResetBall()</code> to center the ball on the board. Then it uses <code class="highlighter-rouge">Invoke()</code> to wait 1 second, then start the ball moving again.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">RestartGame</span><span class="p">(){</span>
+    <span class="nf">ResetBall</span><span class="p">();</span>
+    <span class="nf">Invoke</span><span class="p">(</span><span class="s">"GoBall"</span><span class="p">,</span> <span class="m">1</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">OnCollisionEnter2D()</code> waits until we collide with a paddle, then adjusts the velocity appropriately using both the speed of the ball and of the paddle.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">OnCollisionEnter2D</span> <span class="p">(</span><span class="n">Collision2D</span> <span class="n">coll</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">coll</span><span class="p">.</span><span class="n">collider</span><span class="p">.</span><span class="nf">CompareTag</span><span class="p">(</span><span class="s">"Player"</span><span class="p">)){</span>
+        <span class="n">vel</span><span class="p">.</span><span class="n">x</span> <span class="p">=</span> <span class="n">rb2d</span><span class="p">.</span><span class="n">velocity</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+        <span class="n">vel</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="p">(</span><span class="n">rb2d</span><span class="p">.</span><span class="n">velocity</span><span class="p">.</span><span class="n">y</span> <span class="p">/</span> <span class="m">2.0f</span><span class="p">)</span> <span class="p">+</span> <span class="p">(</span><span class="n">coll</span><span class="p">.</span><span class="n">collider</span><span class="p">.</span><span class="n">attachedRigidbody</span><span class="p">.</span><span class="n">velocity</span><span class="p">.</span><span class="n">y</span> <span class="p">/</span> <span class="m">3.0f</span><span class="p">);</span>
+        <span class="n">rb2d</span><span class="p">.</span><span class="n">velocity</span> <span class="p">=</span> <span class="n">vel</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Nifty swifty, neato spedito, our game is looking swell. Let’s recap. We have two paddles that work, and now a ball that bounces around realistically. The completed script we just added should look like this: <a href="https://github.com/ainc/unity-pong/blob/unity5/Assets/BallControl.cs">BallControl.cs</a>. The Game view should have two paddles and a ball, ready for us to play!</p>
+
+<p>So we’re done right? Not quite!</p>
+
+<h2 id="step-four-the-walls">Step Four: The Walls</h2>
+
+<p>So you may have also noticed by now that your ball can fly off the screen. Really, you play a point, and then the game is over. Not the most fun thing in the world. So we need to make some walls. Let’s first make a game object to contain our walls. Make sure nothing is selected in the Hierarchy pane, then <kbd>right click</kbd> some empty space in the Hierarchy and choose ‘Create Empty’. It will create a plain ol’ empty game object, which we will name ‘Walls’. We don’t need to change anything except to make sure that it has a position of <code class="highlighter-rouge">(0,0,0)</code>.</p>
+
+<p>Now to make an actual wall. In the Hierarchy pane, <kbd>right click</kbd> on the ‘Walls’ object we just made and choose ‘Create Empty’. This will make a new game object that is a ‘child’ of the Walls object. For our purposes, having our walls as children of ‘Walls’ will help us keep the hierarchy nice and clear, since we can click the little arrow next to ‘Walls’ whenever we don’t want to see each individual wall object. The idea of ‘child’ game objects is actually very powerful and does more than just organize things, but we won’t go into it much in this tutorial.</p>
+
+<p>Anyway, call this new child object ‘RightWall.’ Also make sure you go to ‘AddComponent’ and add a Box Collider 2D. That way the ball will bounce off of the wall object, just like we want!</p>
+
+<p><img src="/img/tutorials/unity-pong/rightwall.png" alt="Right wall" /></p>
+
+<p>Now duplicate our new wall object 3 times. Call those duplicates ‘LeftWall’, ‘TopWall’, and ‘BottomWall’. Now we need to move and size those walls so they are in the right spot in our game view - right now, they’re just points sitting in the middle of our board. We need to make them look like walls.</p>
+
+<p>For the RightWall, set its Position to <code class="highlighter-rouge">(5.8, 0, 0)</code> and its Scale to <code class="highlighter-rouge">(1, 6, 1)</code>. This will make it nice and tall. The LeftWall is the same, except its X Position is <code class="highlighter-rouge">-5.8</code>.</p>
+
+<p>TopWall should be positioned at <code class="highlighter-rouge">(0, 3.5, 0)</code> with a scale of <code class="highlighter-rouge">(10.7, 1, 1)</code>, and BottomWall has the same scale but with a Y Position of <code class="highlighter-rouge">-3.5</code>. If you click on the parent ‘Walls’ object, you should now see this in the Scene view:</p>
+
+<p><img src="/img/tutorials/unity-pong/walls_sceneview.png" alt="Walls in the scene view" /></p>
+
+<p>One cool thing: you can now hit play (►), and the ball will bounce off the walls! Next comes an important, but slightly harder part. We need to make this an actual <em>game</em>, not just a ball bouncing around. We need a score system, a way to display the score, some win condition, and a reset button. That’s right. It’s time for….</p>
+
+<h2 id="step-five-the-scoring-user-interface">Step Five: The Scoring User Interface</h2>
+
+<p>First things first, we need a game object for our HUD (or Heads-Up Display). <kbd>Right click</kbd> an empty space in the Hierarchy pane (not on the Walls game object!) and choose ‘Create Empty’. Call the new object ‘HUD’, center its position at <code class="highlighter-rouge">(0, 0, 0)</code>, and add a new script to the HUD object called ‘GameManager’.</p>
+
+<p>This is going to be a fairly long script, but it’s really important for our game!</p>
+
+<h3 id="code-breakdown-2">Code Breakdown</h3>
+
+<p>First, as always, we import our packages and declare our class.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">GameManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+</code></pre></div></div>
+
+<p>Next we make four variables. The first two variables are just integers to keep track of the scores for the two players. The next is a GUI object. ‘GUI’ stands for graphical user interface. This object is going to be responsible for displaying all our different buttons and graphics. We’ll make this skin object in Unity after we finish here. The last variable is a reference to our ball object.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">PlayerScore1</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">PlayerScore2</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="n">GUISkin</span> <span class="n">layout</span><span class="p">;</span>
+
+<span class="n">GameObject</span> <span class="n">theBall</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Then comes the <code class="highlighter-rouge">Start()</code> function, which we use when the game first starts.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">Start</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">theBall</span> <span class="p">=</span> <span class="n">GameObject</span><span class="p">.</span><span class="nf">FindGameObjectWithTag</span><span class="p">(</span><span class="s">"Ball"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Next is the <code class="highlighter-rouge">Score()</code> function. It will get called by another script we write in just a minute, that detects when the ball hits the side walls.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Score</span> <span class="p">(</span><span class="kt">string</span> <span class="n">wallID</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">wallID</span> <span class="p">==</span> <span class="s">"RightWall"</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">PlayerScore1</span><span class="p">++;</span>
+    <span class="p">}</span> <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">PlayerScore2</span><span class="p">++;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">OnGUI()</code> function takes care of displaying the score and the reset button functionality. Then, it checks every time something happens if someone has won yet, and triggers the function <code class="highlighter-rouge">ResetBall()</code> if someone has.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">void</span> <span class="nf">OnGUI</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="n">GUI</span><span class="p">.</span><span class="n">skin</span> <span class="p">=</span> <span class="n">layout</span><span class="p">;</span>
+    <span class="n">GUI</span><span class="p">.</span><span class="nf">Label</span><span class="p">(</span><span class="k">new</span> <span class="nf">Rect</span><span class="p">(</span><span class="n">Screen</span><span class="p">.</span><span class="n">width</span> <span class="p">/</span> <span class="m">2</span> <span class="p">-</span> <span class="m">150</span> <span class="p">-</span> <span class="m">12</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">100</span><span class="p">),</span> <span class="s">""</span> <span class="p">+</span> <span class="n">PlayerScore1</span><span class="p">);</span>
+    <span class="n">GUI</span><span class="p">.</span><span class="nf">Label</span><span class="p">(</span><span class="k">new</span> <span class="nf">Rect</span><span class="p">(</span><span class="n">Screen</span><span class="p">.</span><span class="n">width</span> <span class="p">/</span> <span class="m">2</span> <span class="p">+</span> <span class="m">150</span> <span class="p">+</span> <span class="m">12</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">100</span><span class="p">),</span> <span class="s">""</span> <span class="p">+</span> <span class="n">PlayerScore2</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">GUI</span><span class="p">.</span><span class="nf">Button</span><span class="p">(</span><span class="k">new</span> <span class="nf">Rect</span><span class="p">(</span><span class="n">Screen</span><span class="p">.</span><span class="n">width</span> <span class="p">/</span> <span class="m">2</span> <span class="p">-</span> <span class="m">60</span><span class="p">,</span> <span class="m">35</span><span class="p">,</span> <span class="m">120</span><span class="p">,</span> <span class="m">53</span><span class="p">),</span> <span class="s">"RESTART"</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="n">PlayerScore1</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+        <span class="n">PlayerScore2</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+        <span class="n">theBall</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"RestartGame"</span><span class="p">,</span> <span class="m">0.5f</span><span class="p">,</span> <span class="n">SendMessageOptions</span><span class="p">.</span><span class="n">RequireReceiver</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">PlayerScore1</span> <span class="p">==</span> <span class="m">10</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">GUI</span><span class="p">.</span><span class="nf">Label</span><span class="p">(</span><span class="k">new</span> <span class="nf">Rect</span><span class="p">(</span><span class="n">Screen</span><span class="p">.</span><span class="n">width</span> <span class="p">/</span> <span class="m">2</span> <span class="p">-</span> <span class="m">150</span><span class="p">,</span> <span class="m">200</span><span class="p">,</span> <span class="m">2000</span><span class="p">,</span> <span class="m">1000</span><span class="p">),</span> <span class="s">"PLAYER ONE WINS"</span><span class="p">);</span>
+        <span class="n">theBall</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"ResetBall"</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="n">SendMessageOptions</span><span class="p">.</span><span class="n">RequireReceiver</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">PlayerScore2</span> <span class="p">==</span> <span class="m">10</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">GUI</span><span class="p">.</span><span class="nf">Label</span><span class="p">(</span><span class="k">new</span> <span class="nf">Rect</span><span class="p">(</span><span class="n">Screen</span><span class="p">.</span><span class="n">width</span> <span class="p">/</span> <span class="m">2</span> <span class="p">-</span> <span class="m">150</span><span class="p">,</span> <span class="m">200</span><span class="p">,</span> <span class="m">2000</span><span class="p">,</span> <span class="m">1000</span><span class="p">),</span> <span class="s">"PLAYER TWO WINS"</span><span class="p">);</span>
+        <span class="n">theBall</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"ResetBall"</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="n">SendMessageOptions</span><span class="p">.</span><span class="n">RequireReceiver</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The ‘SendMessage’ call is something we’ve been using a lot in this chunk of code - it will trigger any function that matches the name that we send it in a class we specify. So when we say <code class="highlighter-rouge">theBall.SendMessage("ResetBall")</code>, we tell the program to access the ‘BallControl’ class and trigger the <code class="highlighter-rouge">ResetBall()</code> method. Here’s the completed script: <a href="https://github.com/ainc/unity-pong/blob/unity5/Assets/GameManager.cs">GameManager.cs</a></p>
+
+<p>Ok cool. Looking at the HUD, we now see there’s one new variable under this script that needs filling. It’s asking for a ‘Skin.’ We need to make that in Unity. If you look in your Assets folder, you should see a file that we downloaded that is a special font called ‘6809 Chargen’.</p>
+
+<p><em>NOTE : This font pack is also available for free in the ‘Computer Font Pack’ off the Unity Asset Store. To get it, simply make a free Unity3D account, and go to the Asset Store. Search for the Computer Font Pack, and download it. You can also go into Unity and open up the Asset Store from inside Unity. There, you can download the fonts you want directly into Unity for your use. This font isn’t essential to use, but I’ll explain how to use it, because it gives the text the right ‘Pong’ look.</em></p>
+
+<p>In your Project pane, <kbd>right click</kbd> and create a GUI Skin called ‘ScoreSkin’. Click on that Skin, and you should see a variable field called ‘Font’ at the top of the Inspector pane. <kbd>Click + drag</kbd> our font to that variable slot.</p>
+
+<p><img src="/img/tutorials/unity-pong/score_skin.png" alt="Score Skin with font applied" /></p>
+
+<p>If you scroll down and look under the dropdown menus for ‘Label’ and ‘Button’ you can also change the size of your text, etc. Play around with size until it looks good. I set Font Sizes for my Label and Button to 42 and 20, respectively. In the end, my HUD’s Game Manager (Script) looks like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/game_manager_layout.png" alt="Game Manager with skin applied to layout" /></p>
+
+<p>Awesome! Now you should, when you play, see something like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/gui_font_enabled.png" alt="GUI font and sizes enabled" /></p>
+
+<p>Cool. Now let’s make sure that the game knows when we do score. To do that, we need to add a script to the ‘LeftWall’ and ‘RightWall’ objects under the HUD dropdown. It’s the same script so it should be pretty easy to do. First, we’ll go to ‘Add Component’ on the LeftWall, and name this new script ‘SideWalls.cs’.</p>
+
+<h3 id="code-breakdown-3">Code Breakdown</h3>
+
+<p>After we import our packages, we just need to write one function. This function detects when something is colliding with our left or right walls. If it’s the ball, we call the score method in GameManager, and reset the ball to the middle. That’s about it really. Huh. That was easy.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">SideWalls</span> <span class="p">:</span> <span class="n">MonoBehaviour</span> <span class="p">{</span>
+
+    <span class="k">void</span> <span class="nf">OnTriggerEnter2D</span> <span class="p">(</span><span class="n">Collider2D</span> <span class="n">hitInfo</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">hitInfo</span><span class="p">.</span><span class="n">name</span> <span class="p">==</span> <span class="s">"Ball"</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">string</span> <span class="n">wallName</span> <span class="p">=</span> <span class="n">transform</span><span class="p">.</span><span class="n">name</span><span class="p">;</span>
+            <span class="n">GameManager</span><span class="p">.</span><span class="nf">Score</span><span class="p">(</span><span class="n">wallName</span><span class="p">);</span>
+            <span class="n">hitInfo</span><span class="p">.</span><span class="n">gameObject</span><span class="p">.</span><span class="nf">SendMessage</span><span class="p">(</span><span class="s">"RestartGame"</span><span class="p">,</span> <span class="m">1.0f</span><span class="p">,</span> <span class="n">SendMessageOptions</span><span class="p">.</span><span class="n">RequireReceiver</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You already added the script to ‘LeftWall’, and now, since it’s written, go to ‘Add Component’ on ‘RightWall’ and choose just ‘Script’ instead of ‘New Script.’ Choose the Script we just wrote. Here’s the completed script: <a href="https://github.com/ainc/unity-pong/blob/unity5/Assets/SideWalls.cs">SideWalls.cs</a></p>
+
+<p>Now, in order for Unity to call our <code class="highlighter-rouge">OnTriggerEnter2D</code> method, we have to make sure both the LeftWall and RightWall have the “Is Trigger” checkbox selected on their Box Colliders in the Inspector pane. This means that Unity won’t treat these walls as physical walls, but rather they “trigger” something in the game (in this case, they give a player a point).</p>
+
+<p><img src="/img/tutorials/unity-pong/istrigger.png" alt="Is Trigger checkbox" /></p>
+
+<p>Test your game to make sure both players can score a point. If so, know what that means? We’re DONE! Almost.</p>
+
+<h2 id="last-step-make-the-game">Last Step: Make The Game</h2>
+
+<p>Now, we only have to make our game playable outside of Unity. To do this, go to File at the top of Unity. Go to ‘Build Settings’ and then choose ‘Mac, PC, Linux Standalone.’ This will make an executable (playable) file appear on our desktop. You may need to ‘Add Open Scenes’, to ensure that Main is included in the build.</p>
+
+<p><img src="/img/tutorials/unity-pong/build_settings.png" alt="Build Settings" /></p>
+
+<p>Now, click on ‘Player Settings.’ This is where you should put your name on the Project, choose an icon (I chose the Ball sprite), and uncheck ‘Default Is Full Screen’. It asks for a default screen width and height. I chose 960x540 but it really doesn’t matter too much. The important thing is in the ‘Supported Aspect Ratios’ list. Click the little arrow and uncheck everything except <code class="highlighter-rouge">16:10</code> and <code class="highlighter-rouge">16:9</code>. If we choose a different aspect ratio, it’s possible we might not see our paddles. Your settings in the end should look like this:</p>
+
+<p><img src="/img/tutorials/unity-pong/player_settings.png" alt="Player Settings" /></p>
+
+<p>Now, hit Build and choose where you want to save the file (I chose the desktop), and name it something (I named it Pong v1.0). Look at your desktop. Is it there? Sweet. If you want to see the completed version, here’s the <a href="https://github.com/ainc/unity-pong">sample code on GitHub</a>.</p>
+
+<p>Congratulations, and enjoy your game. Thanks for going through this tutorial, and if you want to learn more about Unity or coding in general, make sure to check out the rest of <a href="http://www.awesomeincu.com/">Awesome Inc U</a> online.</p>
+
+<h2 id="thanks-and-game-on">THANKS, AND GAME ON</h2>
+
+<p><img src="/img/tutorials/unity-pong/finished_pong_game.png" alt="Finished Unity Pong game" /></p>
+
+
+          </div> 
+        </div>       
+
+    	</div> <!-- /container -->
+    
+    </div> <!-- /about -->
+        </div>
+        <!-- check if page is meant to have press footer, if so, add this and take away margin top style in footer -->
+
+<footer ><!-- h/t to http://bootsnipp.com/snippets/featured/bootstrap-3-footer -->    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 hidden-xs">
+                <form action="//awesomeinc.us2.list-manage.com/subscribe/post?u=5114422b2183673d50186748d&amp;id=159107e690" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" class="form-control input-md">
+                    </div>
+                    <button class="btn btn-info btn-lg" type="submit"> Subscribe to Newsletter </button>
+                </form>
+                <hr class="visible-xs-block visible-sm-block">
+            </div>
+            <div class="col-md-8">
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://www.facebook.com/awesomeincorporated" target="_blank"><i class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://twitter.com/awesome_inc"  target="_blank"><i class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://plus.google.com/+AwesomeincOrgLex"  target="_blank"><i class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="mailto:info@awesomeincu.com"  target="_blank"><i class="fa fa-envelope-square fa-3x social-em"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/about/">About us</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li> <a href="/faq/">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/instructors/">Instructors</a></li>
+                        <li><a href="/alumni/">Alumni</a></li>
+                        <li><a href="/careers/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/calendar/">Calendar</a></li>
+                        <li><a href="/tutorials/">Tutorials</a></li>
+                        <li><a href="/notes/">Course Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/academy/">Academy</a></li>
+                        <li><a href="/bootcamp/">Bootcamp</a></li>
+                        <li><a href="/weekofcode/">Week of Code</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="https://www.awesomeinc.org"  target="_blank">Awesome Inc</a></li>
+                        <li><a href="https://fellowship.awesomeinc.org"  target="_blank">Awesome Fellowship</a></li>
+                        <li><a href="http://www.apaxsoftware.com"  target="_blank">APAX Software</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/press/">Press</a></li>
+                        <li><a href="/terms/">Terms of Service</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="https://www.awesomeinc.org"  target="_blank">© 2017 Awesome Inc U</a></li>
+                    <li><a href="#">Back to top</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</footer>
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="//getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/js/parallax.js"></script>
+<script src="/js/accordion.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+        
+    </body>
+</html>

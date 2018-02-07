@@ -1,0 +1,39 @@
+- title: Jekyll and GitHub Pages Web Development
+  standard-price: 20
+  discount-price: 10
+  url: https://www.udemy.com/jekyll-and-github-pages/?couponCode=aincuwebsite
+  logo: logo-jekyll-udemy.png
+  track: Web
+  status: "online"
+
+- title: Develop Your First iPhone App Today!
+  standard-price: 25
+  discount-price: 15
+  url: https://www.udemy.com/iphone-app-crash-course/?couponCode=aincuwebsite
+  logo: logo-ios.png
+  track: Mobile
+  status: "online"
+
+- title: Develop and Launch Your First Website in Just One Day!
+  standard-price: 25
+  discount-price: 15
+  url: https://www.udemy.com/basic-web-crash-course/?couponCode=aincuwebsite
+  logo: logo-html.png
+  track: Web
+  status: "online"
+
+- title: Front-End Web Development, Getting Responsive with Bootstrap
+  standard-price: 20
+  discount-price: 10
+  url: https://www.udemy.com/front-end-web-development-with-bootstrap/?couponCode=aincuwebsite
+  logo: logo-html.png
+  track: Web
+  status: "online"
+
+- title: Make Your First Video Game Today With Unity 3D
+  standard-price: 20
+  discount-price: 10
+  url: https://www.udemy.com/make-a-unity-game-today/?couponCode=aincuwebsite
+  logo: logo-unity3d.png
+  track: Games
+  status: "online"

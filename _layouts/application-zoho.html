@@ -1,0 +1,18 @@
+---
+layout: page
+---
+
+   <div>
+    
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1" >
+            <h1>{{ page.title }}</h1>
+            <p>This is the application for <a href="{{page.course}}">Awesome Inc U {{ page.title | remove: ' Application' }}</a>. The application deadline for the {{page.next-session}} is {{page.application-deadline}}.</p>
+            {{content}}
+          </div>
+        </div>
+      </div> <!-- /container -->
+    
+    </div> <!-- /about -->

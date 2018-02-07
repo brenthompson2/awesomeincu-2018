@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+        <channel>
+                <title>awesomeincu-2015</title>
+                <description>Learn to Code in Lexington, Kentucky</description>              
+                <link></link>
+                <atom:link href="/rss.xml" rel="self" type="application/rss+xml" />
+                
+                        <item>
+                                <title>Demo Day - Bootcamp F17</title>
+                                <description>&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-s17-demo-day.jpg&quot; alt=&quot;Awesome Inc Bootcamp demo day&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;by &lt;a href=&quot;https://plus.google.com/+NickSuch/&quot;&gt;Nick Such&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In September, a group of aspiring software developers began a 500+ hour journey of intense, hands-on learning in Awesome Inc U’s Web Developer Bootcamp. On Thursday, December 7th, this group will be &lt;a href=&quot;https://www.eventbrite.com/e/awesome-inc-demo-day-web-developer-bootcamp-f17-tickets-40105591905&quot;&gt;presenting their final projects&lt;/a&gt;, full-stack web applications, to a group of tech company executives, local software developers, and other members of the Lexington-area technology community.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;The first program of its kind in Central Kentucky, the goal of the Web Developer Bootcamp is to help professionals transition into a new career in software development. This in turn helps local companies recruit local tech talent to support their growth, especially as tech moves beyond its own borders and becomes a bigger part of healthcare, manufacturing, finance, and beyond.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-f17-students.jpg&quot; alt=&quot;Awesome Inc Bootcamp students&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The public is invited to join us for the culmination of the Bootcamp program, a Demo Day on Thurs, December 7th from 12-1:30pm at Awesome Inc. Free registration for the &lt;a href=&quot;https://www.eventbrite.com/e/awesome-inc-demo-day-web-developer-bootcamp-f17-tickets-40105591905&quot;&gt;Bootcamp Demo Day is available on Eventbrite&lt;/a&gt;. Each member of the Bootcamp cohort will give a brief presentation of his or her final project, followed by an opportunity to experience each web application hands-on. Lunch will be provided for registered attendees.&lt;/p&gt;
+
+&lt;p&gt;PS: Applications are now open for our 2018 cohorts (May - Aug, Sept - Dec), and can be accessed via the &lt;a href=&quot;/applications/bootcamp&quot;&gt;Bootcamp application page&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Thu, 30 Nov 2017 00:00:00 -0500</pubDate>
+                                <link>/blog/2017/11/30/bootcamp-demo-day-f17/</link>
+                                <guid isPermaLink="true">/blog/2017/11/30/bootcamp-demo-day-f17/</guid>
+                        </item>
+                
+                        <item>
+                                <title>New Part-Time Course for Adults - Intro to Web</title>
+                                <description>&lt;p&gt;&lt;img src=&quot;/img/blog/intro-to-web-development-awesome-inc.jpg&quot; alt=&quot;Adults learn to code at Awesome Inc&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;by &lt;a href=&quot;https://plus.google.com/+NickSuch/&quot;&gt;Nick Such&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Over the past two years, we have seen tremendous success with Awesome Inc’s full-time Web Developer Bootcamp. Every graduate from our first cohort landed a programming job after the program, our second cohort (which finished just three months ago) is well on their way to repeating that performance, and our third cohort has shown excellent progress in skill development as they enter week nine of their 12-week program. This immersive course has delivered a life-changing experience for 30 professionals who have had the opportunity to devote at least 12 weeks of their lives to learning software development. However, this course format is not the best fit for everyone, so we’re excited to offer a new course, the &lt;strong&gt;&lt;a href=&quot;https://www.eventbrite.com/e/intro-to-web-development-spring-2018-tickets-39667189632&quot;&gt;Intro to Web Development&lt;/a&gt;&lt;/strong&gt;, in a part-time, evening format.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;While we discuss our Bootcamp course as a 12-week, full-time program, that actually leaves out an important part of the learning experience: the Prework. Each Bootcamp student, before beginning the in-person part of the course, studies independently with a set of preparatory lessons called Prework. These lessons give students a first pass on some of the essential skills that we build upon throughout the Bootcamp. These skills include HTML, CSS, JavaScript, the Command Line Interface, text editors, and Git. This enables our Bootcamp students to arrive on day one of class, already possessing a significant set of web development skills. Our new Intro to Web course is focused on this same content.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/intro-to-web-laptop-code.jpg&quot; alt=&quot;Laptop with terminal and text editor with HTML code&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Intro to Web course is a nine-week course that meets two nights per week (Mon and Wed, 6:30-8:30pm). By focusing on our Bootcamp Prework content, this new course is intended for at least two types of students. The first is the busy professional, who is curious about gaining web development skills, or needs a certain amount of web proficiency for their current career, but doesn’t have the time (or desire) to devote to a career-change program like the Bootcamp. The second type of student is one who is interested in the Bootcamp, but would like to try out web development in a smaller way before making the deep dive. This course is designed to help students become reasonably good at what is called “front-end” or “client-side” web development skills, as well to provide a foundation for future courses or self-study in web application development.&lt;/p&gt;
+
+&lt;p&gt;Things you’ll be able to do after completing this course:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create an HTML document from scratch&lt;/li&gt;
+  &lt;li&gt;Style an HTML page using CSS&lt;/li&gt;
+  &lt;li&gt;Write code to manipulate data using JavaScript&lt;/li&gt;
+  &lt;li&gt;Navigate your computer’s file system using the Command Line Interface&lt;/li&gt;
+  &lt;li&gt;Collaboratively manage a software project using Git and GitHub&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We are really excited to finally offer this much-requested course. This is a beginner-level course, so participants are not expected to have prior programming experience. However, you’ll find the most success if you are comfortable using a PC or Mac, creating and opening files and folders, using basic spreadsheets, and typing at least 30 words-per-minute. If you’re interested in this course, but not sure that it’s the right fit, feel free to &lt;a href=&quot;https://www.awesomeincu.com/contact/&quot;&gt;contact us&lt;/a&gt; to discuss your personal learning objectives.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.eventbrite.com/e/intro-to-web-development-spring-2018-tickets-39667189632&quot;&gt;Registration&lt;/a&gt; is open now. Be sure to snag the Early-Bird pricing (save $300), which runs through January 1st.&lt;/p&gt;
+</description>
+                                <pubDate>Wed, 15 Nov 2017 00:00:00 -0500</pubDate>
+                                <link>/blog/2017/11/15/intro-web-new-course/</link>
+                                <guid isPermaLink="true">/blog/2017/11/15/intro-web-new-course/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Demo Day - Bootcamp S17</title>
+                                <description>&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-s17-door.jpg&quot; alt=&quot;Awesome Inc Bootcamp classroom doorway&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;by &lt;a href=&quot;https://plus.google.com/+NickSuch/&quot;&gt;Nick Such&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In May, a group of aspiring software developers began a 500+ hour journey of intense, hands-on learning in Awesome Inc U’s Web Developer Bootcamp. On Thursday, August 10th, this group will be &lt;a href=&quot;https://www.eventbrite.com/e/awesome-inc-demo-day-web-developer-bootcamp-s17-tickets-36700890351&quot;&gt;presenting their final projects&lt;/a&gt;, full-stack web applications, to a group of tech company executives, local software developers, and other members of the Lexington-area technology community.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;The first program of its kind in Central Kentucky, the goal of the Web Developer Bootcamp is to help professionals transition into a new career in software development. This in turn helps local companies recruit local tech talent to support their growth, especially as tech moves beyond its own borders and becomes a bigger part of healthcare, manufacturing, finance, and beyond.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-s17-classroom.jpg&quot; alt=&quot;Awesome Inc Bootcamp students&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The public is invited to join us for the culmination of the Bootcamp program, a Demo Day on Thurs, August 10th from 6-8pm at Awesome Inc. Free registration for the &lt;a href=&quot;https://www.eventbrite.com/e/awesome-inc-demo-day-web-developer-bootcamp-s17-tickets-36700890351&quot;&gt;Bootcamp Demo Day is available on Eventbrite&lt;/a&gt;. Each member of the Bootcamp cohort will give a brief presentation of his or her final project, followed by an opportunity to experience each web application hands-on. We’ll have light refreshments available throughout the evening.&lt;/p&gt;
+
+&lt;p&gt;PS: Applications are now open for our 2018 cohorts (dates TBA), and can be accessed via the &lt;a href=&quot;/applications/bootcamp&quot;&gt;Bootcamp application page&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Wed, 02 Aug 2017 00:00:00 -0400</pubDate>
+                                <link>/blog/2017/08/02/bootcamp-demo-day-s17/</link>
+                                <guid isPermaLink="true">/blog/2017/08/02/bootcamp-demo-day-s17/</guid>
+                        </item>
+                
+                        <item>
+                                <title>First Bootcamp Success, 2017 Sessions Announced</title>
+                                <description>&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-f16-demo-presentation.jpg&quot; alt=&quot;Awesome Inc Bootcamp student Kelly Wright presents at Demo Day F16&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;by &lt;a href=&quot;https://plus.google.com/+NickSuch/&quot;&gt;Nick Such&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;When we launched Awesome Inc U in 2013, we were spurred on by Lexington-area technology companies looking for, but not finding, the software development talent they need to grow. We could have pursued several possible solutions: consulting firm, recruiting practice, teach at the local universities. But we were inspired by a new wave of “&lt;a href=&quot;https://www.coursereport.com/&quot;&gt;coding bootcamps&lt;/a&gt;”, programs designed to train ambitious, local people in a new trade.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;After three years of building the foundation, through 1-day Crash Courses, on-site trainings for organizations, and a set of youth class offerings, we were finally able to launch Awesome Inc U’s first Web Developer Bootcamp in August 2016. Now, only six weeks after the completion of our first Bootcamp session, of &lt;a href=&quot;https://www.awesomeincu.com/alumni/bootcamp-f16/&quot;&gt;our 9 graduates&lt;/a&gt;, 3 already have full-time jobs, and 2 are working together on a SaaS/consulting startup. And we’re just now moving into the &lt;a href=&quot;http://time.com/money/4149206/new-job-search-best-time/&quot;&gt;best time of the year to get a job&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As our F16 cohort dives into their new careers, our team at Awesome Inc U is preparing for our 2017 course schedule. In addition to designing the curriculum for a new intermediate-level youth course (the Coding League, for 11-14 year-olds), we’ve finalized the dates for our &lt;a href=&quot;https://www.awesomeincu.com/bootcamp/&quot;&gt;2017 Bootcamp&lt;/a&gt; sessions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Bootcamp Summer 2017: May 22 - August 11&lt;/li&gt;
+  &lt;li&gt;Bootcamp Fall 2017: September 18 - December 8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We reviewed several options, but selected these dates for a few important reasons. First, we looked at companies around the region and their forecasts for hiring software developers over course of the next year, as well as the most popular times of year for making those hires. While our Bootcamp course has 12 weeks of intense, in-person classes, it is preceded by 4 weeks of self-study, and followed by (&lt;a href=&quot;https://www.coursereport.com/reports/2016-coding-bootcamp-job-placement-demographics-report&quot;&gt;on average&lt;/a&gt;) 8 weeks of job search. This new schedule places a big chunk of those critical 8 weeks during the most ideal times of the year (Jan/Feb and Sept/Oct). Second, we’ve had a significant number of applicants ask for a summer course, to work around the dates for other educational programs in which they’re involved, either as teachers or students. Third, this gives us additional time to implement the feedback from the students and instructors in our first cohort, as well as respond to the latest needs of employers throughout the region. The key point here is the underlying theme to what Awesome Inc U is building: a way to gain new skills, with a tight feedback loop to the workplaces where those skills will actually be used.&lt;/p&gt;
+
+&lt;p&gt;We were super impressed with the students in our F16 cohort, and can’t wait to meet our Summer and Fall 2017 students. Like all educational institutions, we have a special opportunity to influence our students, who will in-turn influence the technology community of which they are now members. Awesome Inc exists to help grow the technology and startup communities throughout Kentucky, so we’re particularly excited that Awesome Inc U students have become part of that fabric. Through a mix of curiosity, discipline, teamwork, and persistence, our graduates are now building software that helps local companies grow, which helps our economy grow, and helps make Kentucky a better place to live, work, and play.&lt;/p&gt;
+
+&lt;p&gt;For the Summer 2017 cohort, we’ve already matched the number of applicants from our first cohort, but &lt;a href=&quot;https://www.awesomeincu.com/applications/bootcamp/&quot;&gt;applications remain open&lt;/a&gt; through March 17th. Interviews begin in January 2017.&lt;/p&gt;
+</description>
+                                <pubDate>Wed, 21 Dec 2016 00:00:00 -0500</pubDate>
+                                <link>/blog/2016/12/21/bootcamp-one-success-2017-sessions-announced/</link>
+                                <guid isPermaLink="true">/blog/2016/12/21/bootcamp-one-success-2017-sessions-announced/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Awesome Inc Recognized as Part of Kentucky’s Local-Global Push for Jobs and Higher Wages</title>
+                                <description>&lt;p&gt;FOR IMMEDIATE RELEASE:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;LEXINGTON, Kentucky, December 6, 2016 — The mayors of Kentucky’s two biggest cities &lt;a href=&quot;http://wkyufm.org/post/louisville-lexington-work-grow-kentucky-exports-and-attract-foreign-investors#stream/0&quot;&gt;named&lt;/a&gt; Awesome Inc as an important element in their commitment to attracting jobs and foreign investment to the state.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;With increasing concern about jobs across the country, mayors Jim Gray of Lexington and Greg Fischer of Louisville recently announced a plan to help Kentuckians increase their wages and opportunities for employment. The &lt;a href=&quot;http://www.locateinlexington.com/DATA-FACTS-FIGURES/Bluegrass-Economic-Advancement-Movement.aspx&quot;&gt;plan&lt;/a&gt; calls for both local and global efforts. Two of the key areas of focus are in software and IT. Both Gray and Fischer named the workforce training program at Awesome Inc as a model to help create economic change statewide, as well as strengthen foreign investment.&lt;/p&gt;
+
+&lt;p&gt;Awesome Inc is a Lexington-based organization committed to helping grow the high-tech and startup communities through various initiatives. Those initiatives include a coding school for youth and adults, as well as a training and mentorship program for startup companies with demonstrated market potential.&lt;/p&gt;
+
+&lt;p&gt;The Awesome Inc workforce training program that Gray and Fischer referenced is a web developer boot camp where participants learn how to code, going from beginners to web developers in 12 weeks, with a guaranteed job at the end of the program.&lt;/p&gt;
+
+&lt;p&gt;“Programs like Awesome Inc’s boot camp are vital to developing a next-generation workforce,”  CEO Drura Parrish of MakeTime told the Lexington Herald-Leader recently in a profile of Awesome Inc. (MakeTime is an online manufacturing workplace.) Parrish told the newspaper that he expects to hire several people from the boot camp next year. “Education and training are no longer linear. This opens up so much opportunity.”&lt;/p&gt;
+
+&lt;p&gt;“We’re passionately committed to taking the state to the next level when it comes to high-tech opportunities for everyone,” said Brian Raney, co-founder of Awesome Inc.&lt;/p&gt;
+
+&lt;p&gt;Thirty-two-year-old Brett Fraley had been a machine operator at factories for many years when he found out about the boot camp. He decided it was finally time to make a change toward a more rewarding career. The compressed time period and low cost compared to a four-year degree made it the ideal opportunity for him. “The boot camp is the best decision I’ve ever made. The knowledge I’ve learned about programming and web development is only part of the experience at boot camp. I used to feel like I was facing a dead-end when it came to employment and planning for my future. Now, I’m optimistic about what’s ahead. I’m interviewing with companies, and I’m confident I can do the work.”&lt;/p&gt;
+
+&lt;p&gt;Based in Lexington, Kentucky, &lt;a href=&quot;https://www.awesomeinc.org/&quot;&gt;Awesome Inc&lt;/a&gt; exists to help grow the Kentucky startup and tech community. Its Awesome Inc U coding school trains youth and adults in software development. Its Fellowship program provides training, pro bono business services and access to mentors and investors for startup companies with demonstrated market potential. Awesome Inc is also the founder of the Kentucky Entrepreneur Hall of Fame. Learn more at &lt;a href=&quot;https://www.awesomeincu.com/&quot;&gt;www.awesomeincu.com.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Media Contact:&lt;/em&gt;&lt;br /&gt;
+Amanda Murray &lt;br /&gt;
+Director of Marketing&lt;br /&gt;
+859-979-0456&lt;br /&gt;
+amanda@awesomeinc.org&lt;br /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;# # #&lt;/p&gt;
+</description>
+                                <pubDate>Tue, 06 Dec 2016 00:00:00 -0500</pubDate>
+                                <link>/blog/2016/12/06/awesome-inc-recognized-kentucky-local-global-jobs-higher-wages/</link>
+                                <guid isPermaLink="true">/blog/2016/12/06/awesome-inc-recognized-kentucky-local-global-jobs-higher-wages/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Demo Day - Bootcamp F16</title>
+                                <description>&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-f16-students.jpg&quot; alt=&quot;Awesome Inc Bootcamp students&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;by &lt;a href=&quot;https://plus.google.com/+NickSuch/&quot;&gt;Nick Such&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In August, &lt;a href=&quot;/blog/2016/09/29/bootcamp-update-halfway/&quot;&gt;ten aspiring software developers&lt;/a&gt; began a 500+ hour journey of intense, hands-on learning in Awesome Inc U’s Web Developer Bootcamp. On Thursday, November 10th, this group will be &lt;a href=&quot;https://www.eventbrite.com/e/demo-day-web-developer-bootcamp-f16-cohort-tickets-28837502747&quot;&gt;presenting their final projects&lt;/a&gt;, full-stack web applications, to a group of tech company executives, local software developers, and other members of the Lexington-area technology community.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;The first program of its kind in Central Kentucky, the goal of the Web Developer Bootcamp is to help professionals transition into a new career in software development. This in turn helps local companies recruit local tech talent to support their growth, especially as tech moves beyond its own borders and becomes a bigger part of healthcare, manufacturing, finance, and beyond.&lt;/p&gt;
+
+&lt;p&gt;The public is invited to join us for the culmination of the Bootcamp program, a Demo Day on Thurs, Nov. 10th from 6-8pm at Awesome Inc. Free registration for the &lt;a href=&quot;https://www.eventbrite.com/e/demo-day-web-developer-bootcamp-f16-cohort-tickets-28837502747&quot;&gt;Bootcamp Demo Day is available on Eventbrite&lt;/a&gt;. Each member of the Bootcamp cohort will give a brief presentation of his or her final project, followed by an opportunity to experience each web application hands-on. We’ll have light refreshments available throughout the evening. Projects include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Communication tool for daycare centers and parents&lt;/li&gt;
+  &lt;li&gt;Data tracking for local 5k running series&lt;/li&gt;
+  &lt;li&gt;Art history educational review tool&lt;/li&gt;
+  &lt;li&gt;Dating app based on movie preferences&lt;/li&gt;
+  &lt;li&gt;Sharing service for hobbyists and artisans to use private workshop spaces&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We hope to see you on Thursday at the &lt;a href=&quot;https://www.eventbrite.com/e/demo-day-web-developer-bootcamp-f16-cohort-tickets-28837502747&quot;&gt;Bootcamp Demo Day&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;PS: Applications are now open for our Spring 2017 cohort, and can be accessed via the &lt;a href=&quot;/applications/bootcamp&quot;&gt;Bootcamp application page&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Wed, 02 Nov 2016 00:00:00 -0400</pubDate>
+                                <link>/blog/2016/11/02/bootcamp-demo-day-f16/</link>
+                                <guid isPermaLink="true">/blog/2016/11/02/bootcamp-demo-day-f16/</guid>
+                        </item>
+                
+                        <item>
+                                <title>From The Trenches - Bootcamp F16 Update</title>
+                                <description>&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-f16-roundtable.jpg&quot; alt=&quot;Awesome Inc U Web Developer Bootcamp students coding&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;by &lt;a href=&quot;https://plus.google.com/+NickSuch/&quot;&gt;Nick Such&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Six weeks ago, the &lt;a href=&quot;https://www.awesomeincu.com/blog/2016/08/31/bootcamp-f16-begins/&quot;&gt;ten students&lt;/a&gt; in our &lt;a href=&quot;/bootcamp/&quot;&gt;Web Developer Bootcamp&lt;/a&gt; gathered into one room at Awesome Inc and cracked open their laptops. In six more weeks, they’ll conclude the formal educational portion of our F16 Bootcamp, armed with the necessary skills and experiences to land their first job as a developer. What they’re doing, learning how to develop software, is no easy task. The journey so far has been filled with a whole range of celebration and frustration, tears and laughter. I wanted to share a brief glance into the world into which our students are diving.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h2 id=&quot;the-hard-parts&quot;&gt;The Hard Parts&lt;/h2&gt;
+
+&lt;p&gt;While we’ve heard that programming is hard, just getting your computer set up to begin programming is no trivial task. &lt;a href=&quot;https://garyditsch.github.io/bootcamp/2016/09/13/creating-virtualenv-with-correct-python.html&quot;&gt;Gary Ditsch&lt;/a&gt; writes, “Twice yesterday I created a virtual environment with the default python version (which is 2.7.11), when I wanted to use python 3.” Then there’s the lingo. In addition to the multitude of programming languages out there (we write code in no less than five languages in this course), there are also programming frameworks with their own set of verbiage. When &lt;a href=&quot;https://lavanyamano.github.io/2016/09/25/Fifth_week.html&quot;&gt;Lavanya Manoharan&lt;/a&gt; says, “This is Django week.” she is not referring to the Gypsy Jazz musician, nor the 2012 Quentin Tarantino movie. Even as we’ve moved on from static HTML web pages, to dynamic web applications powered by Python and styled with Bootstrap, it’s easy to doubt our abilities. &lt;a href=&quot;https://billbunkum.github.io/2016/09/26/week6.html&quot;&gt;William Hurst&lt;/a&gt; wrote, “As a kid, I wanted to be a programmer making computer games (or console games, I suppose); I was disillusioned quickly thereafter seeing what a Qbasic program actually looked like.” While Qbasic may now look elementary, there’s always a new topic, like using an ORM with a database, that makes us feel like quitting.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-fun-parts&quot;&gt;The Fun Parts&lt;/h2&gt;
+
+&lt;p&gt;Programming is full of challenges in nested logic, tricky environment configurations, complex math, and arcane syntax. Yet, one of the biggest struggles for many programmers is just naming things. We’ve often enjoyed the creative names that &lt;a href=&quot;https://jasonmize.github.io/2016/09/09/function_vs_user.html&quot;&gt;Jason Mize&lt;/a&gt; has given his projects and their components, which draws on his experience in art and music. Speaking of drawing, each Wednesday we have a Lunch &amp;amp; Learn session, where one of our Bootcampers teach the rest of us some non-programming skill in which they are an expert. We’ve &lt;a href=&quot;https://twitter.com/awesome_inc/status/776103417550897152&quot;&gt;learned how to draw&lt;/a&gt;, sing, roll a whitewater kayak, and even play Dungeons &amp;amp; Dragons. It’s tough being a beginner programmer, but we were all beginners once. &lt;a href=&quot;https://github.com/AndersFriis/AndersFriis.github.io/blob/master/_posts/2016-09-01.md&quot;&gt;Anders Friis&lt;/a&gt; embraces a healthy perspective when he said in week one, “I think that I am doing pretty well for being a noob.” We looked for optimism like this when we selected our students for this cohort, and it’s been great to see them continue to exude this characteristic.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-good-parts&quot;&gt;The Good Parts&lt;/h2&gt;
+
+&lt;p&gt;While it’s been fun simply getting to know everyone, we started this Bootcamp cohort with a well-defined purpose: to help 10 people get their first job as a software developer. In addition to the hard technical skills, we designed the Bootcamp to reinforce the soft skills that our employer partners are looking for, such as teamwork. We’ve used Git and GitHub to collaborate on projects with the whole class, and we’ve done several projects with 2-person teams, gaining experience in Pair Programming. We’ve also seen our students overcoming obstacles. &lt;a href=&quot;https://kellyinnovation.github.io/2016/09/02/asking-for-help.html&quot;&gt;Kelly Wright&lt;/a&gt; recalls struggling with a topic, thinking she understood it, then going “Back to square one.” But she didn’t give up. With more practice, some help from our expert instructors, she later emerged victorious when, “It all finally made sense at an even deeper level than before.” While every student in this cohort is smart, we’ve seen them become noticeably better programmers week after week. &lt;a href=&quot;https://bfraley.github.io/2016/09/09/textadventure.html&quot;&gt;Brett Fraley&lt;/a&gt; showed some great maturity when he said, “While project planning and management are key steps to designing and building anything, I realized that planning is a skill. Like all skills, they take regular practice to improve upon.” In the end, it’s not just our students’ programming skills that will launch their new careers. It is their character and their ability to get even better each day.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;We couldn’t be more proud of our Bootcamp students and how far they’ve come in these first six weeks. Over the next six weeks, they’ll continue to grow beyond slingers of code into more disciplined architects of systems, designers of interfaces, wranglers of cloud servers, and valuable contributors to teams. They’ve proven that they can build software and they have a hunger to keep learning and mastering their newfound craft. If your organization is hiring junior developers, &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdlGdE8IqWlAWXxfn0fdAxJJY86DZKgDDaumEqLfxmiKjozuQ/viewform&quot;&gt;let us know&lt;/a&gt;, we’d love to welcome you to Awesome Inc to get to know our F16 cohort. We’ll also be at the November 1st &lt;a href=&quot;https://www.facebook.com/events/1655507644777927/&quot;&gt;undrcvr lex&lt;/a&gt; event mingling with local tech companies.&lt;/p&gt;
+
+&lt;p&gt;PS: Applications are now open for our Spring 2017 cohort, and can be accessed via the &lt;a href=&quot;/applications/bootcamp&quot;&gt;Bootcamp application page&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Thu, 29 Sep 2016 00:00:00 -0400</pubDate>
+                                <link>/blog/2016/09/29/bootcamp-update-halfway/</link>
+                                <guid isPermaLink="true">/blog/2016/09/29/bootcamp-update-halfway/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Awesome Inc Launches Lexington’s First Coding Bootcamp - Guarantees Job Placement as Web Developer</title>
+                                <description>&lt;p&gt;by: Gregory Petitt&lt;/p&gt;
+
+&lt;p&gt;Awesome Inc, the hi-tech incubator and computer coding school that provides programming courses for kids and adults in Kentucky has launched Lexington’s first coding Bootcamp.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;The goal of the competitive program is to take &lt;a href=&quot;https://www.awesomeincu.com/bootcamp/&quot;&gt;Bootcamp&lt;/a&gt; enrollees from beginner to job-ready, junior-level developers in 12-weeks. Students are guaranteed job placement as a junior developer with an employer partner upon completion of the Bootcamp. There are hundreds of open jobs for computer programmers in Kentucky, where junior developers often receive starting salaries well above the average Kentucky salary of $41,000. Tuition for the 12-week program is $9,500, far less than the cost for comparable training at the college level.  Scholarships are available for women and minorities.&lt;/p&gt;
+
+&lt;p&gt;Awesome Inc U Bootcamp faculty include Nick Such, Matt Smith and Andrew House. Nick Such has served as the director of the Awesome Inc U technical training program since its launch in 2013. He co-founded Awesome Inc and two other software-based startup companies. Nick is a 2009 graduate of the University of Kentucky’s Mechanical Engineering program. Matt Smith is a partner at APAX Software, a Lexington-based custom software solutions company. Since 2007, APAX has built web and mobile applications for clients like Keeneland, the University of Kentucky, MobileServe, and Bullard. Matt is a 2007 graduate of the University of Kentucky’s Electrical Engineering program. Andrew has been a Full-Stack Developer for the last two years. Prior to Awesome Inc, he worked at a consulting firm where he: met with clients, built API’s, and managed front &amp;amp; back end teams. Andrew is a 2012 graduate of the University of Kentucky’s Agricultural Economics program.&lt;/p&gt;
+
+&lt;p&gt;“We’ve been asked by technology companies, students, and parents about coding camps for years,” explained Nick Such, Director of Awesome Inc U. “The Web Developer Bootcamp was a natural next step for us, since we’ve been providing programming training for years. We recognize that it isn’t possible for everyone to take four years off of work and go to school full time. We needed to find creative ways to help people improve their skills in an intensive, time efficient manner.”&lt;/p&gt;
+
+&lt;p&gt;Awesome Inc CEO Brian Raney said, “We’re excited to help fill a gap in the technology sector across the state of Kentucky. We’ve had a lot of companies in the area come to us saying they can’t find enough developers to fill positions they have open. We spent a great deal of time working with tech companies and tailored our curriculum to fulfill their needs.”&lt;/p&gt;
+
+&lt;p&gt;With over 500 hours of hands-on training, Bootcamp students gain experience while building projects using HTML, CSS, JavaScript, jQuery, Angular.js, AWS, GitHub, Agile, and more. Awesome Inc’s past students and interns have gotten jobs at companies like Facebook, Google, CBS Interactive and Eventbrite.&lt;/p&gt;
+
+&lt;p&gt;The inaugural Bootcamp launched August 22nd and will end in November. Awesome Inc is currently accepting applications for the Spring 2017 cohort, which is scheduled to begin in February.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;About Awesome Inc&lt;/strong&gt;
+Based in Lexington, Kentucky, Awesome Inc exists to help grow the Kentucky startup and tech community.  Its Awesome Inc U coding school trains children and adults in software development. Its Fellowship program provides training, pro bono business services and access to mentors and investors for startup companies with demonstrated market potential.  Awesome Inc is also the founder of the Kentucky Entrepreneur Hall of Fame. To find out more, go to www.awesomeincu.org&lt;/p&gt;
+</description>
+                                <pubDate>Tue, 27 Sep 2016 00:00:00 -0400</pubDate>
+                                <link>/blog/2016/09/27/awesome-inc-launches-first-coding-bootcamp/</link>
+                                <guid isPermaLink="true">/blog/2016/09/27/awesome-inc-launches-first-coding-bootcamp/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Ten Students Begin 12-Week Web Developer Bootcamp Program</title>
+                                <description>&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-f16-classroom.jpg&quot; alt=&quot;Awesome Inc U Web Developer Bootcamp students coding&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;by &lt;a href=&quot;https://plus.google.com/+NickSuch/&quot;&gt;Nick Such&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On August 22nd, the first cohort of our &lt;a href=&quot;/bootcamp/&quot;&gt;Web Developer Bootcamp&lt;/a&gt; began classes at Awesome Inc. The 10 adult students in the Fall 2016 cohort have an average age of 32, and come from diverse backgrounds including chemistry, law, manufacturing, and sales. In addition to four weeks of remote preparation on programming basics, the cohort will spend 12 weeks in on-site classes, from 8AM to 5PM, Monday through Friday.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;To say that this is an intense program is an understatement. And to call it a class is a bit of a misnomer. It’s much more like the first 12 weeks at your first job as a software developer. Instead of taking cues from traditional classroom setups, we found &lt;a href=&quot;https://medium.com/built-to-adapt/hacking-the-workspace-d9a448ce5e6e#.ionzyckqc&quot;&gt;office design inspiration from tech consulting firm Pivotal&lt;/a&gt;. Our team of 10 aspiring developers works with two instructors, who function like lead developers as they guide our students through a series of programming projects.&lt;/p&gt;
+
+&lt;p&gt;Week 1 focused on building a marketing site for a (faux) local restaurant client, “Awesome Pizza”. The client wanted a basic website to showcase some of its dining amenities, as well as providing a home for their blog, and a contact form. Our students used the basics of HTML and CSS to build a first version of the site, then iterated throughout the week to add features like Jekyll (to help follow the DRY Principle) and Bootstrap (to improve styling, especially for mobile web browsers). Now in Week 2, students are building a command-line pizza ordering app for the same client, while diving into the intricacies of the Python programming language and learning the concepts of Object-Oriented Programming.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-f16-standup.jpg&quot; alt=&quot;Web Developer Bootcamp standup meeting&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For the duration of the Bootcamp program, our students are collaborating by using industry-standard tools like Git, with remote repositories hosted on social coding site GitHub. This is one way that this program, like other &lt;a href=&quot;https://www.coursereport.com/&quot;&gt;web developer bootcamps&lt;/a&gt;, differs from most traditional Computer Science programs in academic environments. Bootcamps tend to focus on daily experience with real-world tools, as opposed to a focus on theory, with some hands-on application. Nearly &lt;a href=&quot;https://www.coursereport.com/reports/2016-coding-bootcamp-market-size-research&quot;&gt;18,000 people&lt;/a&gt; are expected to complete software developer bootcamp programs in 2016. The pinnacle for our students is being able to turn ideas into software, in this particular case, full-stack web applications that run on a cloud server. The cohort will spend the 12-week program working on successively more challenging software development projects as they work toward this goal. They’ll gain skills in technologies like HTML, CSS, Bootstrap, GitHub, Python, Test-Driven Development, Databases, Flask, Django, ReST APIs, JavaScript, Angular.js, Amazon Web Services, and Agile Development. At the end of the program, our two women and eight men will not receive a diploma or certification. Rather, they’ll walk away with a portfolio of software project they’ve built, experience working with a team of developers, and the ability to explain how it all works.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/bootcamp-f16-students.jpg&quot; alt=&quot;Awesome Inc Bootcamp students&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As this is no academic exercise, the other key piece of the program is preparing our students for getting their first job as a software developer. The program comes with a money-back guarantee that each student will receive a job offer from a regional company within six months of program completion. Since this program was started in the midst of a software developer shortage in Kentucky, it has been designed with the needs of area technology employers in mind. Ranging from hot new tech startups, to established corporations in major regional industries like healthcare and manufacturing, Awesome Inc U has a set of employer partners who will be sending representatives to get to know students during the Bootcamp program. Before the program concludes on November 11th, students may already know their future employer and co-workers.&lt;/p&gt;
+
+&lt;p&gt;Applications are now open for the Spring 2017 cohort, and can be accessed via the &lt;a href=&quot;/applications/bootcamp&quot;&gt;Bootcamp application page&lt;/a&gt;.&lt;/p&gt;
+</description>
+                                <pubDate>Wed, 31 Aug 2016 00:00:00 -0400</pubDate>
+                                <link>/blog/2016/08/31/bootcamp-f16-begins/</link>
+                                <guid isPermaLink="true">/blog/2016/08/31/bootcamp-f16-begins/</guid>
+                        </item>
+                
+                        <item>
+                                <title>Your guide to a coding education</title>
+                                <description>&lt;p&gt;Guest post by: &lt;a href=&quot;https://medium.com/@Isaac_rowe1&quot;&gt;&lt;strong&gt;Isaac Rowe&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;All across the nation, programs are sprouting, encouraging young and old alike to learn how to code. These programs range from low-key online tutorials to full-blown bootcamps. All of them want to promote the &quot;new literacy&quot;, and you want in on the fun. Why should you learn to code, who should you learn from, and what can you expect?&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;The Guardian recently called coding software &quot; &lt;a href=&quot;http://www.theguardian.com/technology/2014/feb/07/year-of-code-dan-crow-songkick&quot;&gt;the language of our world&lt;/a&gt;&quot;. Every day, millions of people consume and create content from devices that know what to do because someone, somewhere told the device what to do using lines of code. Programs like Awesome Inc U exist in order to teach these important skills to both young and old alike in order to enable them to move from being _consumers __ _to _creators.__  _Awesome Inc isn't the only place doing this either. Both online and off, many resources are being created to teach these skills.&lt;/p&gt;
+
+&lt;p&gt;Why are these programs sprouting up? College Board, the testing agency behind the ACT and AP Exams, reports that 14,517 students took the AP computer science test in 2010, nearly 87% fewer students than the AP Calculus test. Time Magazine  &lt;a href=&quot;http://techland.time.com/2012/07/16/can-we-fix-computer-science-education-in-america/&quot;&gt;reports&lt;/a&gt; that this is because fewer than 10% of schools offer courses like computer science or software engineering. It looks like traditional school isn't getting the job done for high schoolers.&lt;/p&gt;
+
+&lt;p&gt;What about college? Somewhat, but at a price. Atop the US News list for top computer engineering colleges is MIT — at a whopping $43,000 per year. The lowest price on the top 10 is University of Texas- Austin at $9,564 per year — in state, that is.&lt;/p&gt;
+
+&lt;p&gt;This isn't to say that getting a university education isn't worth it; it's that programs like Awesome Inc U want everyone to learn to code without spending a fortune. Here's a breakdown of the kind of nontraditional ways to learn to code:&lt;/p&gt;
+
+&lt;h4 id=&quot;online-courses&quot;&gt;Online Courses&lt;/h4&gt;
+
+&lt;p&gt;Online courses are the most widespread source of coding education. In 2013, &lt;a href=&quot;http://code.org/&quot;&gt;Code.org&lt;/a&gt; got 28 million people into coding with its &quot;Hour of Code&quot; campaign. Other sites, like  &lt;a href=&quot;http://codecademy.com/&quot;&gt;Codecademy.com&lt;/a&gt;, offer low-key, interactive tutorials. At this level, no one's making any promises that you'll suddenly be the next top programmer at Google, but it is the first key step to getting used to the environment and getting into the problem-solving mindset of a programmer (arguably more useful than learning any one language).&lt;/p&gt;
+
+&lt;p&gt;Other sites like iTunes U and  &lt;a href=&quot;http://udemy.com/&quot;&gt;Udemy&lt;/a&gt; offer full-blown courses complete with video lectures from professors. Many of Awesome Inc U's online courses are administered through Udemy, and this format is gaining considerable popularity. The prices for Udemy courses are drastically lower than attending a physical institution, and you can get a comprehensive learning experience.&lt;/p&gt;
+
+&lt;h4 id=&quot;in-person-and-on-location&quot;&gt;In-person and On-location&lt;/h4&gt;
+
+&lt;p&gt;The online learning environment isn't for everyone, and thankfully you don't have to live in San Francisco to have access to great resources. Other than Awesome Inc U, there are some other nontraditional ways to learn code, many located in the Southeast United States.&lt;/p&gt;
+
+&lt;p&gt;One example is  &lt;a href=&quot;https://generalassemb.ly/&quot;&gt;General Assembly&lt;/a&gt;, which has campuses all across the world as well as online classes. They happen to have a campus in Atlanta, and are a pretty big player in computer science education apart from universities. General Assembly's offerings range from full-time, 12-week hack bootcamps, to one-day crash courses and refreshers, similar to Awesome Inc U. One event is &quot;Building Native Apps with JavaScript&quot; for $30, and it promises the takeaway of having written a functional mobile app in JavaScript by the end of the class.&lt;/p&gt;
+
+&lt;p&gt;There are also more extensive part-time offerings, similar to  &lt;a href=&quot;https://www.awesomeincu.com/academy/&quot;&gt;Awesome Inc U's Academy&lt;/a&gt; and &lt;a href=&quot;https://www.awesomeincu.com/bootcamp/&quot;&gt;Web Developer Bootcamp&lt;/a&gt;. These programs can be pricey but they promise a practical job-ready knowledge of the material. General Assembly and others claim their education is more relevant than that of a university, because they are taught by real developers and focus on having actual, tangible project results.&lt;/p&gt;
+
+&lt;p&gt;Computer programming education is growing, and it's growing just in time too. While no one can guarantee you a job because you did Codecademy, enrolled in a one-day class at Awesome Inc U, or even attended a big university, learning to code is one of the best investments you could make. These programs are starting because supply has to meet demand. The number of software engineering jobs is expected to  &lt;a href=&quot;http://www.bls.gov/ooh/Computer-and-Information-Technology/Software-developers.htm&quot;&gt;grow 22%&lt;/a&gt; in the next 10 years, while the average for other jobs is 11%. In 2012, the median pay was $93,350, which is more than enough to pay for tuition to local code bootcamps like NSS or  &lt;a href=&quot;http://www.bignerdranch.com/we-teach/bootcamps.html&quot;&gt;Big Nerd Ranch in Atlanta&lt;/a&gt; in a short time.&lt;/p&gt;
+
+&lt;h4 id=&quot;filling-the-gap&quot;&gt;Filling the gap&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/blog/filling-the-gap.png&quot; alt=&quot;Filling the gap statistical image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Source:  &lt;a href=&quot;http://www.exploringcs.org/resources/cs-statistics&quot;&gt;http://www.exploringcs.org/resources/cs-statistics&lt;/a&gt; Data from Bureau of Labor Statistics&lt;/p&gt;
+
+&lt;p&gt;At the end of the day, these programs are working. Not only are the big programs placing people in jobs; every one-day class and every online campaign is generating interest. Remember the stat about the woeful number of engaged high-school students from College Board? That was from 2010. Now, more than double that many students take the test. From 2013 to 2014, there was a 19% increase in participation, more than any other test. 792 more schools offered the test. The numbers still aren't great, but they are getting better, and it's programs like Awesome Inc. U that are helping people get there.&lt;/p&gt;
+
+&lt;p&gt;More than anything, especially if you aren't looking into a computer science or engineering career, learning code isn't always about the code. It's about how to think. It's about breaking down a big problem into something solvable. Being a thinker and a problem solver is something that goes far in any field for anyone, anywhere, and that is why, now more than ever, everyone should learn to code.&lt;/p&gt;
+</description>
+                                <pubDate>Mon, 08 Aug 2016 00:00:00 -0400</pubDate>
+                                <link>/blog/2016/08/08/your-guide-to-coding-education/</link>
+                                <guid isPermaLink="true">/blog/2016/08/08/your-guide-to-coding-education/</guid>
+                        </item>
+                
+        </channel>
+</rss>

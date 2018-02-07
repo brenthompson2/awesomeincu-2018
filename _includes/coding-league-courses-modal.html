@@ -1,0 +1,42 @@
+<!-- After school coding club modal -->
+<div class="modal fade" id="coding-league" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Coding League Class List</h4>
+			</div>
+			<div class="modal-body">
+				<p>The Coding League meets one night a week for 90 minutes, and new sessions begin each month during the school year. Students use code to create websites. These websites range from informational pages on students’ hobbies and interests, to interactive games, and handy utilities. Coding League participants should have some prior programming experience, such as a basic course at school or <a href="/coding-club/">Awesome Inc’s Coding Club</a>. Since we’ll be using text-based programming languages, students should be comfortable typing at <a href="https://10fastfingers.com/typing-test/english">20 words per minute</a> or faster.</p>
+				<ul>
+					<li>Learn the basics of Computer Science</li>
+					<li>Create your own programs using JavaScript</li>
+					<li>Meet other students learning to code</li>
+				</ul>
+				<table class="table table-striped">
+				    <tr><th>Date/Time</th><th>Course</th><th>Price</th><th>Availability</th></tr>
+				    
+					{% for course in site.data.course-list-eventbrite %}
+					{% if course.status == 'active' and course.curriculum == 'league' %}
+					
+						<tr><td><a href="{{ course.url }}"><img src="/img/logos/{{ course.logo }} " alt="{{ course.title }}" width="40"></a>&nbsp;&nbsp;{{ course.date }}, {{ course.time }}</td><td><a href="{{ course.url }}">{{ course.title }}</a></td>
+						<td>
+						{{ course.standard-price }} {% if course.scholarships %}(scholarships available){% endif %}</td>
+						<td><center><a class="btn btn-primary btn-large" href="{{ course.url }}" 
+						{% if course.url contains "eventbrite" %}
+						target="_blank">Register
+						{% else %}
+						>Apply
+						{% endif %}
+						</a></center></td></tr>
+					
+					{% endif %}
+					{% endfor %}
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    _                                           ___
+   / \__      _____  ___  ___  _ __ ___   ___  |_ _|_ __   ___
+  / _ \ \ /\ / / _ \/ __|/ _ \| '_ ` _ \ / _ \  | || '_ \ / __|
+ / ___ \ V  V /  __/\__ \ (_) | | | | | |  __/  | || | | | (__
+/_/   \_\_/\_/ \___||___/\___/|_| |_| |_|\___| |___|_| |_|\___|
+  Growing High-Tech Startups in Lexington, Kentucky. #horses
+-->
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:description" content="These notes are for Week of Code - Classic (Mobile, Web, Games). Looking for Week of Code - Hardware (Arduino, Web, Games)?
+
+">
+<meta property="og:url" content="http://localhost:4000/notes/weekofcode/">
+<meta name="author" content="Awesome Inc">
+<meta property="og:title" content="Week of Code">
+<title>Week of Code | Awesome Inc U</title>
+<link rel="icon" href="/img/favicon.ico">
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Bootstrap core CSS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!-- External CSS -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,700|Exo:300,800" rel="stylesheet" type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<!-- Custom CSS -->
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<link href="/css/custom.css" rel="stylesheet" type="text/css">
+<link href="/css/jekyll-tutorial.css" rel="stylesheet" type="text/css">
+<!-- my ip tracking -->
+<script type="text/javascript" src="https://l2.io/ip.js?var=myip"></script>
+<!-- Google Analytics -->
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-40742716-1', 'auto');
+    ga('send', 'pageview', {
+        'dimension1':  myip
+    });
+</script>
+
+        <!-- 
+	facebook pixel conversion tracking 
+	created on: 5/7/2016
+	last updated: 1/6/2017
+-->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '1732394227046919'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=1732394227046919&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+        <script type="text/javascript">
+var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"77464144f0307e5d43de560d9806d2fdd98dbf1a8dba0fb4a61a9630fe7d7d5c1e92507c13fa0fac71e5ac4fb3822ca1", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
+</script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img alt="Awesome Inc U" src="/img/Logo_Horizontal_white.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+            </ul>
+            <ul class="nav nav-pills navbar-nav navbar-right">
+                <li><p class="navbar-btn"><a class="btn btn-default" href="/youth/" role="button">Youth Courses</a></p></li>
+                <li><p class="navbar-btn"><a class="btn btn-default" href="/adults/" role="button">Adult Courses</a></p></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+        <div class="Week">
+           <div>
+    
+    	<div class="container">
+    		
+  			<div class="row head1">
+    			<div class="col-md-12" >
+    				<h2>Week of Code <a class="btn btn-primary" href="/weekofcode/" role="button">Register</a></h2>
+    			</div>
+      	</div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 notes">
+          <p><em>These notes are for Week of Code - Classic (Mobile, Web, Games). Looking for <a href="/notes/weekofcode-hw/">Week of Code - Hardware</a> (Arduino, Web, Games)?</em></p>
+
+<h2 id="overview">Overview</h2>
+
+<h3 id="what-youll-do-this-week">What you’ll do this week</h3>
+
+<ul>
+  <li>Understand basic Computer Science concepts</li>
+  <li>Write code in C#, HTML, CSS, and JavaScript</li>
+  <li>Build Android mobile apps with MIT App Inventor</li>
+  <li>Design and Publish your own Website</li>
+  <li>Create your own Video Game with Unity 3D</li>
+  <li>Receive 1-on-1 support from our instructional team</li>
+  <li>Share a project presentation with peers &amp; parents</li>
+</ul>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<ul>
+  <li>The ability to type text on a computer (e.g. write an email, edit a Word document). We recommend <a href="https://10fastfingers.com/typing-test/english">20 WPM</a> or faster.</li>
+  <li>Experience using a variety of websites, games, and apps</li>
+</ul>
+
+<h3 id="equipment-and-account-setup">Equipment and Account setup</h3>
+
+<ul>
+  <li>Students each need to bring a computer with macOS/Windows (must have permission to install programs, including necessary passwords)</li>
+  <li>Software: <a href="http://www.google.com/chrome/">Google Chrome</a>, <a href="https://store.unity.com/download?ref=personal">Unity - personal edition</a></li>
+  <li>Accounts: <a href="accounts.google.com">Google account</a> (Gmail, Google Drive, etc), <a href="https://id.unity.com/">Unity account</a>, <a href="https://id.webmaker.org/signup">Mozilla Webmaker account</a>, <a href="https://codecombat.com/">CodeCombat account</a> (get special class code from instructors)</li>
+</ul>
+
+<h2 id="schedule-summary">Schedule Summary</h2>
+
+<p><a href="#prework-day">Pre-work</a> - Intro to programming concepts with Angry Birds, Codecademy, Scratch, JavaScript</p>
+
+<p><a href="#mobile-day">Mon</a> - Making Mobile Apps with MIT App Inventor</p>
+
+<p><a href="#web-day">Tues</a> - Making Websites with HTML, CSS, and JavaScript</p>
+
+<p><a href="#game-day">Wed</a> - Making Video Games with Unity 3D</p>
+
+<p><a href="#project-day">Thurs</a> - Project day: go in-depth on a track (Web, Mobile, Game) of your choice</p>
+
+<h2 id="detailed-schedule">Detailed Schedule</h2>
+
+<h3 id="prework-day">Pre-work (optional setup help / self-guided prep session)</h3>
+
+<p>** Note: times may change for setup session. See class email for details.</p>
+
+<h4 id="coding-basics">Coding Basics</h4>
+
+<ul>
+  <li>Watch <a href="http://www.youtube.com/watch?v=FC5FbmsH4fw">video</a></li>
+  <li>Do <a href="http://learn.code.org/hoc/1">Angry Birds and Plants vs Zombies</a> challenge</li>
+  <li><a href="http://learn.code.org/flappy/1">Make your own Flappy Bird game</a></li>
+  <li>Making Art with Code
+    <ul>
+      <li><a href="http://hourofcode.com/pr">Processing</a></li>
+      <li><a href="https://www.khanacademy.org/hour-of-code/hour-of-code-tutorial/p/intro-to-drawing">Khan Academy</a></li>
+    </ul>
+  </li>
+  <li>Optional:
+    <ul>
+      <li><a href="http://light-bot.com/hocflash.html">Light Bot</a></li>
+      <li><a href="https://www.touchdevelop.com/hourofcode2">TouchDevelop</a></li>
+      <li><a href="http://scratch.mit.edu/">MIT Scratch</a></li>
+      <li><a href="http://robozzle.com/">RoboZZle</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="deeper-dive-into-cs">Deeper Dive into CS</h4>
+
+<ul>
+  <li>CS Topics - <a href="https://docs.google.com/presentation/d/19xKp0xGAZlptzgbX612Zg3Q9kh-zLFhbGxg63VOZurk/edit">slides</a></li>
+  <li>JavaScript basics
+    <ul>
+      <li><a href="http://www.codecademy.com/hour-of-code/">Codecademy Hour of Code</a></li>
+      <li><a href="https://codepen.io/">CodePen</a> or <a href="https://jsfiddle.net/">JSFiddle</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="web-development">Web Development</h4>
+
+<ul>
+  <li>HTML and CSS basics
+    <ul>
+      <li><a href="https://thimble.webmaker.org/">Mozilla Thimble</a></li>
+      <li><a href="http://www.codecademy.com/tracks/htmlcss">Codecademy Web Track</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="setup--install-help">Setup / Install help</h4>
+<ul>
+  <li>See Equipment and Account Setup section above</li>
+  <li>Homework challenge
+    <ul>
+      <li><a href="http://www.codecademy.com/courses/javascript-beginner-en-Bthev-mskY8/0/1">Rock Paper Scissors in code</a></li>
+      <li><a href="http://sonic-pi.net/">Sonic Pi - music from code</a></li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="mobile-day">Monday - Mobile Apps</h3>
+
+<p><img src="/img/notes/weekofcode-appinventor.png" alt="MIT App Inventor screenshot" /></p>
+
+<h4 id="1pm">1pm</h4>
+
+<ul>
+  <li>Introductions - students, instructors</li>
+  <li>Why it’s important to learn to code</li>
+  <li>Awesome Inc Core Values
+    <ul>
+      <li>Be Good</li>
+      <li>Be Excellent</li>
+      <li>Be a Friend</li>
+      <li>Be You</li>
+    </ul>
+  </li>
+  <li>What ground rules should we have?
+    <ul>
+      <li>When the instructor is talking, <abbr title="listen">_____</abbr>.</li>
+      <li>Keep your hands to <abbr title="yourself">_____</abbr>.</li>
+      <li>Read, Try, <abbr title="friend">_____</abbr>, Coach.</li>
+      <li>Be positive and <abbr title="encouraging">_____</abbr>.</li>
+      <li>No <abbr title="food">_____</abbr> or <abbr title="drinks">_____</abbr> on the table.</li>
+      <li>Bring the <abbr title="fun">_____</abbr>.</li>
+    </ul>
+  </li>
+  <li>Text editor skills and vocabulary
+    <ul>
+      <li>Copy, Cut, Paste, Switch windows</li>
+      <li>Arrow keys vs Mouse, Shift-to-select</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="115pm">1:15pm</h4>
+
+<ul>
+  <li>Mobile Apps with <a href="http://appinventor.mit.edu/" target="_blank">MIT App Inventor</a> Overview</li>
+  <li>Getting Started</li>
+  <li><a href="http://explore.appinventor.mit.edu/sites/all/files/hourofcode/TalkToMePart1.pdf">TalkToMe</a> App
+    <ul>
+      <li>Part 1 “Hello World”</li>
+      <li>Part 2 UserInput</li>
+      <li><a href="http://explore.appinventor.mit.edu/sites/all/files/hourofcode/TalkToMePart2.pdf">Part 3 Accelerometer</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="200pm">2:00pm</h4>
+
+<ul>
+  <li>Break/Snack</li>
+</ul>
+
+<h4 id="215pm">2:15pm</h4>
+<ul>
+  <li><a href="http://explore.appinventor.mit.edu/ai2/space-invaders">SpaceInvaders App V1</a></li>
+  <li>Download Images
+    <ul>
+      <li><a href="/img/notes/weekofcode-rocket.png" download="">Rocket</a></li>
+      <li><a href="/img/notes/weekofcode-saucer.png" download="">Saucer</a></li>
+    </ul>
+  </li>
+  <li>Part 1: Moving the Rocket</li>
+  <li>Part 2: Moving the Saucer</li>
+  <li>Part 3: Bullet Behavior</li>
+  <li>Testing Game Play</li>
+</ul>
+
+<h4 id="3pm">3pm</h4>
+
+<ul>
+  <li>Break / Game</li>
+</ul>
+
+<h4 id="330pm">3:30pm</h4>
+
+<ul>
+  <li>SpaceInvaders App V2
+    <ul>
+      <li>Keeping Score</li>
+      <li>Resetting the Game</li>
+      <li>Testing Game Play</li>
+    </ul>
+  </li>
+  <li><a href="http://appinventor.mit.edu/explore/ai2/share.html">Bulding, Packaging, &amp; Installing Your App</a></li>
+</ul>
+
+<h4 id="430pm">4:30pm</h4>
+
+<ul>
+  <li>Confirm Web (Google Chrome, Mozilla Thimble) setup for Tuesday</li>
+  <li>More App Inventor
+    <ul>
+      <li>SpaceInvaders App
+        <ul>
+          <li>Customize colors and font</li>
+          <li>Change up speeds/clocktime</li>
+          <li>Code an end to the game</li>
+        </ul>
+      </li>
+      <li><a href="http://appinventor.mit.edu/explore/ai2/molemash.html">Whack-a-Mole game</a>
+        <ul>
+          <li>Get a <a href="http://appinventor.mit.edu/explore/sites/all/files/tutorials/helloPurr/meow.mp3">Meow noise</a> from <a href="http://appinventor.mit.edu/explore/content/hellopurr.html">HelloPurr</a></li>
+        </ul>
+      </li>
+      <li><a href="http://appinventor.mit.edu/explore/ai2/get-gold.html">Get the Gold</a></li>
+      <li><a href="http://appinventor.mit.edu/explore/content/minigolf.html">Mini Golf</a></li>
+      <li>My Favorite Team
+        <ul>
+          <li><a href="http://ai2.appinventor.mit.edu/?galleryId=4884510797201408">Sportsball Fanatic sample app</a></li>
+          <li>Launcher with 3 buttons (Catch game, Profile, Website)</li>
+          <li>Team Profile</li>
+          <li>Team Website</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Want to go more in-depth with Android?
+    <ul>
+      <li>See <a href="https://www.udacity.com/course/ud853">Android on Udacity</a></li>
+      <li>Install <a href="https://developer.android.com/sdk/installing/studio.html">Android Studio</a></li>
+      <li>Master/Detail Flow
+        <ul>
+          <li><a href="https://github.com/nicksuch/MyFavoriteTeam">My Favorite Team sample code</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="5pm">5pm</h4>
+
+<hr />
+
+<h3 id="web-day">Tuesday - Websites</h3>
+
+<p><img src="/img/notes/weekofcode-animal-website.png" alt="Website about animals" /></p>
+
+<h4 id="1pm-1">1pm</h4>
+
+<ul>
+  <li>What is “The Web”?
+    <ul>
+      <li><a href="https://docs.google.com/presentation/d/17vOuLgv_EY7V1MgPx6h17TNceu4A7MmAQytHrBJFSZI/edit#slide=id.g255e2bb9d_00">Nick’s slides</a></li>
+      <li><a href="http://bit.ly/murraygsp">Nerf’s slides</a></li>
+    </ul>
+  </li>
+  <li>View Page Source, see HTML, CSS, JavaScript</li>
+  <li>Chrome Developer Tools
+    <ul>
+      <li>Go to <a href="https://twitter.com/awesome_inc">Twitter.com/awesome_inc</a></li>
+    </ul>
+  </li>
+  <li>Use <a href="https://thimble.mozilla.org/" target="_blank">Mozilla Thimble</a> to make our first web page
+    <ul>
+      <li>HTML Elements
+        <ul>
+          <li>Headings</li>
+          <li>Paragraph</li>
+          <li>Links</li>
+          <li>Lists</li>
+          <li>Images</li>
+        </ul>
+      </li>
+      <li>Styles with CSS
+        <ul>
+          <li>Text Colors</li>
+          <li>Background Colors</li>
+          <li>Fonts</li>
+        </ul>
+      </li>
+      <li><a href="https://developer.mozilla.org/en-US/Learn/HTML/Cheatsheet">HTML Cheatsheet</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference</a></li>
+    </ul>
+  </li>
+  <li>Create our own site - <a href="http://nicksuch.github.io/weekofcode-web/">My Favorite Animal</a>
+    <ul>
+      <li>Create new project with Mozilla Thimble</li>
+      <li><a href="https://docs.google.com/document/d/1TOuXlaAo-9bJNwu7ZvBSP4KJKfguGXraTivp9xVCUyg/edit">Website manual</a></li>
+      <li><a href="https://raw.githubusercontent.com/nicksuch/weekofcode-web/gh-pages/styles.css">COPY THIS CSS CODE</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="3pm-1">3pm</h4>
+
+<ul>
+  <li>Break / Game</li>
+</ul>
+
+<h4 id="315pm">3:15pm</h4>
+
+<ul>
+  <li>Special Content
+    <ul>
+      <li>Tables</li>
+      <li>YouTube embed
+        <ul>
+          <li>Share -&gt; Embed</li>
+        </ul>
+      </li>
+      <li>Google Form embed
+        <ul>
+          <li><a href="https://docs.google.com/forms/d/1OXXXjfutX2pbjZwAuOmwzD_vVMmXVFOJgBX-8sXPTZU/viewform">Sample Form</a></li>
+          <li>
+            <p>Form embed code:</p>
+
+            <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;iframe src="https://docs.google.com/forms/d/1OXXXjfutX2pbjZwAuOmwzD_vVMmXVFOJgBX-8sXPTZU/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="4pm">4pm</h4>
+
+<ul>
+  <li>Publish and share</li>
+  <li>Remix sample projects</li>
+</ul>
+
+<h4 id="430pm-1">4:30pm</h4>
+
+<p>If times remains:</p>
+
+<ul>
+  <li>Use Sublime Text (a “text editor”)</li>
+  <li>Deployment with FTP
+    <ul>
+      <li>FileZilla
+        <ul>
+          <li>Host: <a href="http://woc.awesomeincu.com">woc.awesomeincu.com</a></li>
+        </ul>
+      </li>
+      <li>Server</li>
+      <li>Relative links</li>
+    </ul>
+  </li>
+  <li>How to register a Domain Name with <a href="https://domains.google/">Google Domains</a></li>
+  <li><a href="http://www.codecademy.com/skills/make-a-website">Codecademy web practice</a></li>
+  <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+  <li><a href="http://www.codecademy.com/goals/hour-of-code">JavaScript</a></li>
+</ul>
+
+<h4 id="5pm-1">5pm</h4>
+
+<ul>
+  <li>At home: see <a href="https://docs.google.com/document/d/1TOuXlaAo-9bJNwu7ZvBSP4KJKfguGXraTivp9xVCUyg/edit">web manual</a> and <a href="https://github.com/ainc/basicweb-crash/tree/weekofcode-animals">sample code</a> and <a href="http://nicksuch.github.io/weekofcode-web/">sample page</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla HTML Reference</a></li>
+  <li>Confirm Unity setup for tomorrow. Protip: bring a mouse!</li>
+</ul>
+
+<p><img src="/img/notes/weekofcode-albatross.jpg" alt="Nick's favorite animal is the Wandering Albatross" /></p>
+
+<hr />
+
+<h3 id="game-day">Wednesday - Video Games</h3>
+
+<p><img src="/img/notes/weekofcode-unity-pong.png" alt="Making Pong with Unity" /></p>
+
+<h4 id="1pm-2">1pm</h4>
+
+<ul>
+  <li>Unity Game Engine interface overview</li>
+  <li>Run a sample project</li>
+</ul>
+
+<h4 id="130pm">1:30pm</h4>
+
+<ul>
+  <li>Start <a href="https://www.awesomeincu.com/tutorials/unity-pong/" target="_blank">Unity Pong tutorial</a></li>
+</ul>
+
+<h4 id="3pm-2">3pm</h4>
+
+<ul>
+  <li>Break / Game</li>
+</ul>
+
+<h4 id="315pm-1">3:15pm</h4>
+
+<ul>
+  <li>More <a href="https://www.awesomeincu.com/tutorials/unity-pong/">Unity Pong</a></li>
+</ul>
+
+<h4 id="430pm-2">4:30pm</h4>
+
+<ul>
+  <li>If time:
+    <ul>
+      <li><a href="http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial">Roll-a-Ball</a></li>
+      <li><a href="http://www.nicksuch.com/Roll-a-ball/www/www.html">Upload Roll-A-Ball</a></li>
+      <li><a href="https://www.assetstore.unity3d.com/en/#!/content/11228">2D Platformer from Unity Assets Store</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="5pm-2">5pm</h4>
+
+<ul>
+  <li>Homework:
+    <ul>
+      <li>Finish <a href="https://www.awesomeincu.com/tutorials/unity-pong/">Unity Pong</a></li>
+      <li>Pick a tutorial/project for Friday</li>
+    </ul>
+  </li>
+  <li>Remind students to bring headphones for Friday tutorials</li>
+</ul>
+
+<hr />
+
+<h3 id="project-day">Thursday - Project Day</h3>
+
+<p><img src="/img/notes/weekofcode-screenshots.png" alt="Week of Code projects" /></p>
+
+<h4 id="1pm-3">1pm</h4>
+
+<ul>
+  <li>Review what we’ve done so far
+    <ul>
+      <li>Mobile, Web, Games, Hardware</li>
+    </ul>
+  </li>
+  <li>Pick a project:
+    <ul>
+      <li>Mobile
+        <ul>
+          <li><a href="http://appinventor.mit.edu/explore/ai2/tutorials.html">App Inventor intermediate tutorials</a>
+            <ul>
+              <li><a href="http://appinventor.mit.edu/explore/ai2/get-gold.html">Get the Gold</a></li>
+              <li><a href="http://appinventor.mit.edu/explore/ai2/stockquotes.html">Stock Quotes</a></li>
+              <li><a href="http://appinventor.mit.edu/explore/ai2/quizme.html">QuizMe</a></li>
+              <li><a href="http://appinventor.mit.edu/explore/ai2/molemash-2.html">Mole Mash 2</a></li>
+            </ul>
+          </li>
+          <li>(Mac only) <a href="https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/">Start developing iOS apps with Swift</a></li>
+        </ul>
+      </li>
+      <li>Web
+        <ul>
+          <li><a href="https://thimbleprojects.org/mozillalearning/11698/">Homework Excuse Generator</a></li>
+          <li><a href="https://thimbleprojects.org/mozillalearning/220079/">Back to School postcard</a></li>
+          <li><a href="https://thimbleprojects.org/mozillalearning/279519/">Build with HTML Bricks</a></li>
+          <li><a href="http://p5js.org/examples/">p5.js animation projects</a>, remix from <a href="https://thimbleprojects.org/mozillalearning/213461/">p5.js sample</a></li>
+          <li><a href="https://www.codecademy.com/learn/learn-javascript">Javascript on Codecademy</a></li>
+        </ul>
+      </li>
+      <li>Game
+        <ul>
+          <li><a href="http://www.awesomeincu.com/tutorials/unity-pong/">Pong Tutorial, 2D</a></li>
+          <li><a href="https://github.com/dannythorne/MakingMinecraft_Take02">Making Minecraft, 3D</a></li>
+          <li><a href="http://unity3d.com/learn/tutorials/projects/roll-ball-tutorial">Roll-a-Ball, 3D</a></li>
+          <li><a href="https://unity3d.com/learn/tutorials/projects/2d-ufo-tutorial">UFO game, 2D</a></li>
+        </ul>
+      </li>
+      <li>Other
+        <ul>
+          <li><a href="https://scratch.mit.edu/">MIT Scratch</a> - tutorials from <a href="https://inventwithscratch.com/book/">Scratch Programming Playground</a></li>
+          <li><a href="http://sonic-pi.net/">Sonic Pi</a>, make music like <a href="https://aimxhaisse.com/aerodynamic-en.html">Aerodynamic</a> with code</li>
+          <li><a href="http://learnpythonthehardway.org/book">Learn Python The Hard Way</a></li>
+          <li><a href="http://www.coderbyte.com/CodingArea/Challenges/">Coderbyte algorithm challenges</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Note: most projects here will take longer than 4 hours to complete. That’s OK! Our goal during project day is to help you get started on something significant that you can continue working on after the Week of Code.</p>
+
+<h4 id="2pm">2pm</h4>
+
+<ul>
+  <li>Work time</li>
+</ul>
+
+<h4 id="3pm-3">3pm</h4>
+
+<ul>
+  <li>Break / Game</li>
+</ul>
+
+<h4 id="315pm-2">3:15pm</h4>
+
+<ul>
+  <li>Work time</li>
+</ul>
+
+<h4 id="415pm">4:15pm</h4>
+
+<ul>
+  <li>Show &amp; Tell
+    <ol>
+      <li>Show us one thing you made this week</li>
+      <li>Tell us one interesting thing you learned</li>
+      <li>What’s one thing you want to create next?</li>
+    </ol>
+  </li>
+  <li>Recap</li>
+  <li>Next steps for learning
+    <ol>
+      <li>Online resources: <a href="https://www.codecademy.com/">Codecademy</a>, <a href="https://www.code.org">Code.org</a>, <a href="https://www.udacity.com">Udacity</a></li>
+      <li>Awesome Inc Fall/Spring weekly classes:
+        <ul>
+          <li>Beginner: register for <a href="https://www.awesomeincu.com/coding-club/">Coding Club</a></li>
+          <li>Intermediate: register for <a href="https://www.awesomeincu.com/coding-league/">Coding League</a></li>
+          <li>Advanced: apply for <a href="https://www.awesomeincu.com/academy/">The Academy</a></li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h4 id="5pm-3">5pm</h4>
+
+          </div> 
+        </div>       
+
+    	</div> <!-- /container -->
+    
+    </div> <!-- /about -->
+        </div>
+        <!-- check if page is meant to have press footer, if so, add this and take away margin top style in footer -->
+
+<footer ><!-- h/t to http://bootsnipp.com/snippets/featured/bootstrap-3-footer -->    
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 hidden-xs">
+                <form action="//awesomeinc.us2.list-manage.com/subscribe/post?u=5114422b2183673d50186748d&amp;id=159107e690" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" class="form-control input-md">
+                    </div>
+                    <button class="btn btn-info btn-lg" type="submit"> Subscribe to Newsletter </button>
+                </form>
+                <hr class="visible-xs-block visible-sm-block">
+            </div>
+            <div class="col-md-8">
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://www.facebook.com/awesomeincorporated" target="_blank"><i class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://twitter.com/awesome_inc"  target="_blank"><i class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="https://plus.google.com/+AwesomeincOrgLex"  target="_blank"><i class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                </div>
+                <div class="col-md-3 col-xs-3">
+                    <a href="mailto:info@awesomeincu.com"  target="_blank"><i class="fa fa-envelope-square fa-3x social-em"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/about/">About us</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li> <a href="/faq/">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/instructors/">Instructors</a></li>
+                        <li><a href="/alumni/">Alumni</a></li>
+                        <li><a href="/careers/">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/calendar/">Calendar</a></li>
+                        <li><a href="/tutorials/">Tutorials</a></li>
+                        <li><a href="/notes/">Course Notes</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/academy/">Academy</a></li>
+                        <li><a href="/bootcamp/">Bootcamp</a></li>
+                        <li><a href="/weekofcode/">Week of Code</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="https://www.awesomeinc.org"  target="_blank">Awesome Inc</a></li>
+                        <li><a href="https://fellowship.awesomeinc.org"  target="_blank">Awesome Fellowship</a></li>
+                        <li><a href="http://www.apaxsoftware.com"  target="_blank">APAX Software</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li><a href="/press/">Press</a></li>
+                        <li><a href="/terms/">Terms of Service</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="https://www.awesomeinc.org"  target="_blank">© 2017 Awesome Inc U</a></li>
+                    <li><a href="#">Back to top</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.container -->
+</footer>
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="//getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/js/parallax.js"></script>
+<script src="/js/accordion.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/jquery.isotope.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+        
+    </body>
+</html>

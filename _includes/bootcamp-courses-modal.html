@@ -1,0 +1,42 @@
+<!-- Bootcamp modal -->
+<div class="modal fade" id="bootcamp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Bootcamp upcoming cohorts</h4>
+			</div>
+			<div class="modal-body">
+				<p>The Web Developer Bootcamp is a 12-week, full-time training program for aspiring web developers. We’ve worked with companies throughout the region to design a curriculum to prepare you to dive into a career in web development. This intense training program is designed to quickly take you from the basics of programming to a professional level of competency in building modern web applications.</p>
+				<ul>
+					<li>Over 500 hours of hands-on experience</li>
+					<li>Build a portfolio of 10+ web projects</li>
+					<li>Learn to use HTML, CSS, JavaScript, jQuery, AngularJS, AWS, GitHub, Agile, and more.</li>
+				</ul>
+				<table class="table table-striped">
+				    <tr><th>Date/Time</th><th>Course</th><th>Price</th><th>Availability</th></tr>
+				    
+					{% for course in site.data.course-list-bootcamp %}
+					{% if course.status == 'active' %}
+					
+						<tr><td><a href="{{ course.url }}"><img src="/img/logos/{{ course.logo }} " alt="{{ course.title }}" width="40"></a>&nbsp;&nbsp;{{ course.date }}, {{ course.time }}</td><td><a href="{{ course.url }}">{{ course.title }}</a></td>
+						<td>
+						{{ course.standard-price }} {% if course.financing %}(financing available){% endif %}</td>
+						<td><center><a class="btn btn-primary btn-large" href="{{ course.url }}" 
+						{% if course.url contains "eventbrite" %}
+						target="_blank">Register
+						{% else %}
+						>Apply
+						{% endif %}
+						</a></center></td></tr>
+					
+					{% endif %}
+					{% endfor %}
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

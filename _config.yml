@@ -1,0 +1,31 @@
+name: Awesome Inc U
+url: https://www.awesomeincu.com
+description: "Learn to Code in Lexington, Kentucky"
+author: Awesome Inc
+google_verification: oiWfM5j5u1IuiWaAkBu8lKyqs5o1ilQCfnM0raw6JPk
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+exclude: [node_modules]
+collections:
+    applications:
+        output: true
+        permalink: /applications/:path/
+    courses:
+        output: true
+        permalink: /:path/
+    interest:
+        output: true
+        permalink: /interest/:path/
+    notes:
+        output: true
+        permalink: /notes/:path/
+    tutorials:
+        output: true
+        permalink: /tutorials/:path/
+
+# Useful info, update here for sitewide usage
+
+students-taught: 1200

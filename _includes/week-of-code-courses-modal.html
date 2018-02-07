@@ -1,0 +1,50 @@
+<!-- Week of Code modal -->
+<div class="modal fade" id="week-of-code" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Week of Code Summer Camp</h4>
+			</div>
+			<div class="modal-body">
+				<p>By the end of the week, each student will have built at least one web page, app, and video game using programming languages like HTML, CSS, JavaScript, Arduino w/ C++, and Unity 3D w/ C#. The camp is kept small to ensure everyone gets focused attention and learns at their pace.</p>
+				<ul>
+					<li>Mobile App Development with Android</li>
+					<li>Web Development with HTML, CSS, and Javascript</li>
+					<li>Video Game Development with Unity 3D</li>
+					<li>1-on-1 support from our instructional team</li>
+					<li>Final project presentations at the end of the camp</li>
+				</ul>
+				<div style="overflow-x:auto;">
+				<table class="table table-striped">
+				    <tr><th>Date/Time</th><th>Course</th><th>Price</th><th>Early Bird</th><th>Availability</th></tr>
+				    
+					{% for course in site.data.course-list-eventbrite %}
+					{% if course.status == 'active' and course.curriculum == 'k12-week' %}
+					
+						<tr><td><a href="{{ course.url }}"><img src="/img/codecamplogo.png" alt="{{ course.title }}" width="40"></a>&nbsp;&nbsp;{{ course.date }}, {{ course.time }}</td><td><a href="{{ course.url }}">{{ course.title }}</a></td>
+						<td>
+						<s>{{ course.standard-price }}</s> {% if course.scholarships %}(scholarships available){% endif %}</td>
+						<td>
+						{{ course.early-bird-price }}
+						</td>
+						<td><center><a class="btn btn-primary btn-large" href="{{ course.url }}" 
+						{% if course.url contains "eventbrite" %}
+						target="_blank">Register
+						{% else %}
+						>Apply
+						{% endif %}
+						</a></center></td></tr>
+					
+					{% endif %}
+					{% endfor %}
+				</table>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<p class="pull-left">Don't see what you're looking for? <a href="/contact">Contact us</a></p>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
